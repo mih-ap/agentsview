@@ -10,7 +10,7 @@
   import { normalizeMessagePreview } from "../../utils/messages.js";
   import { StatusDot } from "@kenn-io/kit-ui";
   import { sessionStatusLabel } from "../../utils/sessionStatus.js";
-  import { m } from "../../i18n/index.js";
+  import { getLocale, m } from "../../i18n/index.js";
 
   function truncate(text: string, max: number): string {
     if (text.length <= max) return text;
@@ -96,7 +96,7 @@
           title={m.analytics_top_sessions_filter_unclean()}
         >
           {m.analytics_top_sessions_unclean_count({
-            countLabel: uncleanCount.toLocaleString(),
+            countLabel: uncleanCount.toLocaleString(getLocale()),
           })}
         </button>
       {/if}

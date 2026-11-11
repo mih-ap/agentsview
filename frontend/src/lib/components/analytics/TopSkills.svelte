@@ -3,7 +3,7 @@
   import { analytics } from "../../stores/analytics.svelte.js";
   import PanelStatus from "./PanelStatus.svelte";
   import type { DbSkillAgentBreakdown as SkillAgentBreakdown, DbSkillProjectBreakdown as SkillProjectBreakdown, DbSkillUsage as SkillUsage } from "../../api/generated/index.js";
-  import { m } from "../../i18n/index.js";
+  import { getLocale, m } from "../../i18n/index.js";
 
   const skills = $derived(analytics.skills?.by_skill ?? []);
 
@@ -30,7 +30,7 @@
     if (!value) return m.analytics_top_skills_never();
     const d = new Date(value);
     if (Number.isNaN(d.getTime())) return value;
-    return d.toLocaleDateString(undefined, {
+    return d.toLocaleDateString(getLocale(), {
       month: "short",
       day: "numeric",
     });
@@ -77,7 +77,7 @@
       m.analytics_top_skills_tooltip({
         skill: skill.skill_name,
         count: skill.call_count,
-        countLabel: skill.call_count.toLocaleString(),
+        countLabel: skill.call_count.toLocaleString(getLocale()),
         pct: skill.pct,
       }),
     );
@@ -95,9 +95,9 @@
       <span class="count">
         {m.analytics_top_skills_count({
           calls: analytics.skills.total_skill_calls,
-          callsLabel: analytics.skills.total_skill_calls.toLocaleString(),
+          callsLabel: analytics.skills.total_skill_calls.toLocaleString(getLocale()),
           skills: analytics.skills.distinct_skills,
-          skillsLabel: analytics.skills.distinct_skills.toLocaleString(),
+          skillsLabel: analytics.skills.distinct_skills.toLocaleString(getLocale()),
         })}
       </span>
     {/if}
@@ -126,12 +126,12 @@
             ></span>
           </span>
           <span class="bar-value">
-            {skill.call_count.toLocaleString()}
+            {skill.call_count.toLocaleString(getLocale())}
           </span>
           <span class="session-value">
             {m.analytics_session_shape_session_count({
               count: skill.session_count,
-              countLabel: skill.session_count.toLocaleString(),
+              countLabel: skill.session_count.toLocaleString(getLocale()),
             })}
           </span>
           <span class="last-used">
@@ -145,7 +145,7 @@
               {#each skill.agent_breakdown as agent}
                 <Chip size="xs" uppercase={false} class="agent-chip">
                   <span class="agent-name">{agent.agent}</span>
-                  <span class="agent-count">{agent.count.toLocaleString()}</span>
+                  <span class="agent-count">{agent.count.toLocaleString(getLocale())}</span>
                   <span class="agent-pct">
                     {agentPct(agent, skill.call_count)}
                   </span>

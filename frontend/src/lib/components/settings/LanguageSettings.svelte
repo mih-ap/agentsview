@@ -47,6 +47,10 @@
       name: "es",
       label: m.settings_language_spanish(),
     },
+    {
+      name: "ru",
+      label: m.settings_language_russian(),
+    },
   ]);
 
   function handleLocaleSelect(value: string) {

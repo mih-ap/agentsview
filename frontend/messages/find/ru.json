@@ -1,0 +1,50 @@
+{
+  "session_find_whole_word": "Искать слово целиком",
+  "session_find_loading_history": "Загрузка ранних сообщений…",
+  "session_find_announce_match": "Совпадение {current} из {total}",
+  "session_find_block_count": [
+    {
+      "declarations": ["input count", "local countPlural = count: plural"],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "{count} совпадение",
+        "countPlural=few": "{count} совпадения",
+        "countPlural=many": "{count} совпадений",
+        "countPlural=other": "{count} совпадения"
+      }
+    }
+  ],
+  "session_find_results_group_count": [
+    {
+      "declarations": ["input count", "local countPlural = count: plural"],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "{count} совпадение",
+        "countPlural=few": "{count} совпадения",
+        "countPlural=many": "{count} совпадений",
+        "countPlural=other": "{count} совпадения"
+      }
+    }
+  ],
+  "session_find_results_title": "Результаты поиска",
+  "session_find_results_empty": "В этой сессии нет совпадений",
+  "session_find_toggle_results": "Показать результаты поиска",
+  "session_find_hide_results": "Скрыть результаты поиска",
+  "session_find_subagent_excluded": "Встроенные сообщения субагентов не учитываются.",
+  "session_find_rail_label": [
+    {
+      "declarations": ["input count", "local countPlural = count: plural"],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "{count} совпадение в этой сессии",
+        "countPlural=few": "{count} совпадения в этой сессии",
+        "countPlural=many": "{count} совпадений в этой сессии",
+        "countPlural=other": "{count} совпадения в этой сессии"
+      }
+    }
+  ],
+  "session_find_raw_output": "Исходный вывод при поиске",
+  "session_find_history_incomplete": "Не удалось загрузить ранние сообщения. Результаты неполные.",
+  "session_find_retry_history": "Повторить загрузку истории",
+  "session_find_partial_results": "Частичные результаты"
+}

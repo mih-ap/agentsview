@@ -11,13 +11,13 @@
   const COL_LABEL_HEIGHT = 18;
   const FALLBACK_WIDTH = 480;
   const DAYS = [
-    { label: "Sun", dayIdx: 6 },
-    { label: "Mon", dayIdx: 0 },
-    { label: "Tue", dayIdx: 1 },
-    { label: "Wed", dayIdx: 2 },
-    { label: "Thu", dayIdx: 3 },
-    { label: "Fri", dayIdx: 4 },
-    { label: "Sat", dayIdx: 5 },
+    { label: m.analytics_weekday_sun(), dayIdx: 6 },
+    { label: m.analytics_weekday_mon(), dayIdx: 0 },
+    { label: m.analytics_weekday_tue(), dayIdx: 1 },
+    { label: m.analytics_weekday_wed(), dayIdx: 2 },
+    { label: m.analytics_weekday_thu(), dayIdx: 3 },
+    { label: m.analytics_weekday_fri(), dayIdx: 4 },
+    { label: m.analytics_weekday_sat(), dayIdx: 5 },
   ];
 
   const LEVEL_COLORS_LIGHT = [

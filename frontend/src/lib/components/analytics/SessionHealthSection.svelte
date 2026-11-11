@@ -8,7 +8,7 @@
     from "./OutcomeDistribution.svelte";
   import HealthTrend from "./HealthTrend.svelte";
   import PanelStatus from "./PanelStatus.svelte";
-  import { m } from "../../i18n/index.js";
+  import { getLocale, m } from "../../i18n/index.js";
 
   import type { DbSignalsAgentRow, DbSignalsProjectRow } from "../../api/generated/index.js";
 
@@ -30,7 +30,7 @@
   function formatSessionCount(count: number): string {
     return m.analytics_session_shape_session_count({
       count,
-      countLabel: count.toLocaleString(),
+      countLabel: count.toLocaleString(getLocale()),
     });
   }
 </script>
@@ -50,11 +50,11 @@
       <h3 class="section-title">{m.analytics_session_health_title()}</h3>
       <span class="section-subtitle">
         {m.analytics_session_health_scored({
-          countLabel: signals.scored_sessions.toLocaleString(),
+          countLabel: signals.scored_sessions.toLocaleString(getLocale()),
         })}
         &middot;
         {m.analytics_session_health_unscored({
-          countLabel: signals.unscored_sessions.toLocaleString(),
+          countLabel: signals.unscored_sessions.toLocaleString(getLocale()),
         })}
       </span>
     </div>

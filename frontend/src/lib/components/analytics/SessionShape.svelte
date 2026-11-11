@@ -3,7 +3,7 @@
   import PanelStatus from "./PanelStatus.svelte";
   import { router } from "../../stores/router.svelte.js";
   import type { DbDistributionBucket as DistributionBucket } from "../../api/generated/index.js";
-  import { m } from "../../i18n/index.js";
+  import { getLocale, m } from "../../i18n/index.js";
 
   type View = "length" | "duration" | "autonomy";
   let activeView: View = $state("length");
@@ -113,7 +113,7 @@
       <div class="shape-footer">
         {m.analytics_session_shape_session_count({
           count: analytics.sessionShape.count,
-          countLabel: analytics.sessionShape.count.toLocaleString(),
+          countLabel: analytics.sessionShape.count.toLocaleString(getLocale()),
         })}
       </div>
     {/if}

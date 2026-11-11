@@ -1,0 +1,3244 @@
+{
+  "data_reclassify_session_preview_filtered_empty": "No sessions to preview. Automated sessions are hidden; use the filter button to include them.",
+  "data_batch_saving_progress": [
+    {
+      "declarations": [
+        "input saved",
+        "input count",
+        "local savedNumber = saved: number",
+        "local countNumber = count: number"
+      ],
+      "match": {
+        "*": "Saving {savedNumber} of {countNumber}…"
+      }
+    }
+  ],
+  "data_candidate_worktree_prefix": "Worktree prefix",
+  "data_candidate_common_parent": "Common parent",
+  "data_candidate_paths_sample": "Showing a sample of the recorded paths.",
+  "data_candidate_observed_paths": [
+    {
+      "declarations": [
+        "input count",
+        "local countPlural = count: plural",
+        "local countNumber = count: number"
+      ],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "{countNumber} observed folder",
+        "countPlural=other": "{countNumber} observed folders"
+      }
+    }
+  ],
+  "app_auth_title": "Требуется авторизация",
+  "app_auth_description": "Для доступа к серверу нужен токен. Введите auth_token из ~/.agentsview/config.toml или AGENTSVIEW_AUTH_TOKEN.",
+  "app_auth_placeholder": "Вставьте токен доступа",
+  "app_auth_authenticate": "Войти",
+  "app_auth_disconnect_reset": "Отключиться и сбросить",
+  "app_undo_session_deleted": "Session deleted",
+  "app_undo_undo": "Undo",
+  "nav_toggle_sidebar": "Показать или скрыть боковую панель",
+  "nav_toggle_sidebar_shortcut": "Показать или скрыть боковую панель (b)",
+  "nav_open_sidebar": "Открыть боковую панель",
+  "nav_close_sidebar": "Закрыть боковую панель",
+  "nav_resize_sidebar": "Изменить ширину боковой панели",
+  "nav_home": "Главная",
+  "nav_primary": "Основная навигация",
+  "nav_sessions": "Сессии",
+  "nav_usage": "Использование",
+  "nav_activity": "Активность",
+  "nav_more_navigation": "Другие разделы",
+  "nav_more": "Ещё",
+  "nav_trends": "Тенденции",
+  "nav_recall": "Поиск в истории",
+  "nav_pinned": "Закреплённое",
+  "nav_quality": "Качество",
+  "nav_trash": "Корзина",
+  "nav_search_sessions": "Поиск сессий…",
+  "nav_search_sessions_shortcut": "Поиск сессий ({shortcut})",
+  "header_transcript_normal_title": "Обычный режим — все сообщения",
+  "header_transcript_normal_label": "Обычный режим переписки",
+  "header_transcript_normal": "Обычный",
+  "header_transcript_focused_title": "Краткий режим — запросы пользователя и итоговые ответы",
+  "header_transcript_focused_label": "Краткий режим переписки",
+  "header_transcript_focused": "Краткий",
+  "header_transcript_filter_title": "Фильтр типов блоков",
+  "header_transcript_filter_label": "Фильтр типов блоков",
+  "header_transcript_visibility": "Видимость блоков",
+  "header_transcript_show_all": "Показать всё",
+  "header_transcript_blocks_user": "Сообщения пользователя",
+  "header_transcript_blocks_assistant": "Ответы ассистента",
+  "header_transcript_blocks_thinking": "Рассуждения",
+  "header_transcript_blocks_tool": "Вызовы инструментов",
+  "header_transcript_blocks_code": "Блоки кода",
+  "header_transcript_blocks_system": "Системные границы",
+  "header_transcript_blocks_hook": "Хуки",
+  "header_actions_follow_latest": "Следить за новыми сообщениями",
+  "header_actions_toggle_sort": "Изменить порядок сортировки (o)",
+  "header_actions_cycle_layout": "Сменить компоновку: {layout} (l)",
+  "header_actions_cycle_layout_label": "Сменить компоновку сообщений",
+  "header_actions_export_options": "Параметры экспорта сессии",
+  "header_actions_export_session": "Экспортировать сессию",
+  "header_actions_download_html": "Скачать в формате HTML",
+  "header_actions_copied_markdown_link": "Ссылка на Markdown скопирована",
+  "header_actions_copy_markdown_link": "Скопировать ссылку на экспорт Markdown",
+  "header_actions_copy_source_path": "Скопировать путь к исходному файлу",
+  "header_actions_publish_title": "Опубликовать в Gist (p)",
+  "header_actions_publish_label": "Опубликовать в Gist",
+  "header_actions_publish_public": "Опубликовать общедоступный Gist",
+  "header_actions_publish_secret": "Опубликовать секретный Gist",
+  "header_actions_more_actions": "Другие действия",
+  "header_actions_layout": "Компоновка: {layout}",
+  "header_actions_refresh_data": "Обновить данные",
+  "header_actions_refresh_data_shortcut": "Обновить данные (r)",
+  "header_actions_sync_sessions": "Синхронизировать сессии",
+  "header_actions_sync_sessions_shortcut": "Синхронизировать сессии (r)",
+  "header_actions_refresh": "Обновить",
+  "header_actions_sync": "Синхронизация",
+  "header_actions_import_unavailable": "Импорт недоступен в режиме чтения",
+  "header_actions_import_archive_only": "Импорт недоступен в режиме архива",
+  "header_actions_import_conversations": "Импортировать переписку",
+  "header_actions_import": "Импорт",
+  "header_actions_import_claude_syncing": "Идёт синхронизация Claude.ai. Откройте импорт, чтобы посмотреть ход выполнения или остановить её.",
+  "header_actions_toggle_theme": "Сменить тему",
+  "header_actions_settings": "Настройки",
+  "header_actions_keyboard_shortcuts": "Горячие клавиши",
+  "header_actions_keyboard_shortcuts_shortcut": "Горячие клавиши (?)",
+  "status_bar_archive_stale": "Данные архива могут быть устаревшими.",
+  "status_bar_archive_rebuilding": "Данные архива могут быть устаревшими. Изменения приостановлены до завершения перестроения.",
+  "status_bar_archive_stale_rebuild": "Данные архива могут быть устаревшими. Нажмите, чтобы перестроить архив.",
+  "status_bar_sync_failed": "Ошибка синхронизации",
+  "status_bar_sessions": [
+    {
+      "declarations": ["input count", "input countLabel", "local countPlural = count: plural"],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "{countLabel} сессия",
+        "countPlural=few": "{countLabel} сессии",
+        "countPlural=many": "{countLabel} сессий",
+        "countPlural=other": "{countLabel} сессии"
+      }
+    }
+  ],
+  "status_bar_messages": [
+    {
+      "declarations": ["input count", "input countLabel", "local countPlural = count: plural"],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "{countLabel} сообщение",
+        "countPlural=few": "{countLabel} сообщения",
+        "countPlural=many": "{countLabel} сообщений",
+        "countPlural=other": "{countLabel} сообщения"
+      }
+    }
+  ],
+  "status_bar_projects": [
+    {
+      "declarations": ["input count", "input countLabel", "local countPlural = count: plural"],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "{countLabel} проект",
+        "countPlural=few": "{countLabel} проекта",
+        "countPlural=many": "{countLabel} проектов",
+        "countPlural=other": "{countLabel} проекта"
+      }
+    }
+  ],
+  "status_bar_open_performance_debug": "Открыть диагностику производительности",
+  "status_bar_perf": "Производительность",
+  "status_bar_remote_unreachable_title": "Нет связи с удалённым сервером. Проверьте адрес и токен в настройках или отключитесь.",
+  "status_bar_remote_unreachable": "нет связи с удалённым сервером",
+  "status_bar_sync_not_ready": "синхронизация не готова",
+  "status_bar_zoom_out": "Уменьшить масштаб ({shortcut} -)",
+  "status_bar_reset_zoom": "Сбросить масштаб ({shortcut} 0)",
+  "status_bar_zoom_in": "Увеличить масштаб ({shortcut} +)",
+  "status_bar_update_available_title": "Доступна новая версия: {version}",
+  "status_bar_update_available": "доступно обновление",
+  "status_bar_version_mismatch_title": "Версии интерфейса и сервера различаются. Нажмите, чтобы перезагрузить страницу.",
+  "status_bar_version_mismatch": "версии различаются — перезагрузите страницу",
+  "status_bar_scanning": "Сканирование {project}…",
+  "status_bar_syncing_percent": "Синхронизация: {percent}% ({done}/{total})",
+  "status_bar_syncing": "Синхронизация…",
+  "status_bar_synced_ago": "синхронизировано {time}",
+  "status_bar_build": "Сборка: {commit}",
+  "command_palette_placeholder": "Search sessions and messages...",
+  "command_palette_search_mode_label": "Search mode",
+  "command_palette_mode_fulltext": "Full text",
+  "command_palette_mode_semantic": "Semantic",
+  "command_palette_mode_hybrid": "Hybrid",
+  "command_palette_search_error": "Search unavailable",
+  "command_palette_search_failed": "Search failed. Please try again.",
+  "command_palette_semantic_setup_title": "Semantic search isn't set up",
+  "command_palette_semantic_setup_config_step": "1. Add this to config.toml:",
+  "command_palette_semantic_setup_local": "Already using Nomic with Ollama? Follow the full recipe to keep your index when switching to the shared local server.",
+  "command_palette_semantic_setup_local_link": "Server settings",
+  "command_palette_semantic_setup_build_step": "2. Restart the daemon, then build the index. The CLI asks before the first download:",
+  "command_palette_semantic_copy_config": "Copy config snippet",
+  "command_palette_semantic_copy_command": "Copy command",
+  "command_palette_semantic_copied": "Скопировано!",
+  "command_palette_semantic_disabled_title": "Semantic search is disabled",
+  "command_palette_semantic_ready_title": "Semantic index not built yet",
+  "command_palette_semantic_ready_intro": "Semantic search is configured, but the embeddings index hasn't been built for this archive.",
+  "command_palette_semantic_build_button": "Build embeddings",
+  "command_palette_semantic_build_hint": "The build runs on the server in the background; this search re-runs when it finishes.",
+  "command_palette_semantic_failed_title": "Embeddings build failed",
+  "command_palette_search_timeout_title": "Search took too long",
+  "command_palette_search_timeout_detail": "Try again. The first Semantic or Hybrid search can be slower while the embedding model warms up.",
+  "command_palette_relevance": "Relevance",
+  "command_palette_recency": "Recency",
+  "command_palette_searching": "Searching...",
+  "command_palette_no_results": "No results",
+  "command_palette_copy_session_id": "Copy session ID",
+  "command_palette_recent_sessions": "Recent Sessions",
+  "session_breadcrumb_back_to_sessions": "Back to sessions",
+  "session_breadcrumb_sessions": "Сессии",
+  "session_breadcrumb_resume_session_in_terminal": "Resume session in terminal",
+  "session_breadcrumb_session_actions": "Session actions",
+  "session_breadcrumb_resume_session": "Resume session",
+  "session_breadcrumb_resume": "Resume",
+  "session_breadcrumb_open": "Open",
+  "session_breadcrumb_default_terminal": "Default terminal",
+  "session_breadcrumb_copy_command": "Copy command",
+  "session_breadcrumb_copy_directory_path": "Copy directory path",
+  "session_breadcrumb_open_in": "Open in",
+  "session_breadcrumb_copy_session_id": "Copy session ID",
+  "session_breadcrumb_copy_session_id_value": "Copy session ID: {id}",
+  "session_breadcrumb_copied": "Скопировано!",
+  "session_breadcrumb_estimated_session_cost": "Estimated session cost",
+  "session_breadcrumb_total_cost": "Total",
+  "session_breadcrumb_total_cost_title": [
+    {
+      "declarations": ["input count", "input countLabel", "local countPlural = count: plural"],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "Total cost including {countLabel} subagent",
+        "countPlural=other": "Total cost including {countLabel} subagents"
+      }
+    }
+  ],
+  "session_breadcrumb_usage_breakdown_title": "Session usage breakdown",
+  "session_breadcrumb_usage_breakdown_loading": "Loading usage...",
+  "session_breadcrumb_usage_breakdown_steps": [
+    {
+      "declarations": ["input count", "input countLabel", "local countPlural = count: plural"],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "{countLabel} step",
+        "countPlural=other": "{countLabel} steps"
+      }
+    }
+  ],
+  "session_breadcrumb_copy_link_to_session": "Copy link to session",
+  "session_breadcrumb_show_session_analysis": "Show session analysis",
+  "session_breadcrumb_hide_session_analysis": "Hide session analysis",
+  "session_breadcrumb_find_in_session": "Find in session",
+  "session_breadcrumb_find_in_session_shortcut": "Find in session (/)",
+  "session_breadcrumb_rename": "Rename",
+  "session_breadcrumb_delete": "Delete",
+  "session_breadcrumb_resumed_in": "Resumed in {target}",
+  "session_breadcrumb_command_copied": "Command copied!",
+  "session_breadcrumb_failed": "Failed",
+  "session_breadcrumb_not_supported": "Not supported",
+  "session_breadcrumb_no_path_available": "No path available",
+  "session_breadcrumb_path_copied": "Path copied!",
+  "session_breadcrumb_opened_in": "Opened in {target}",
+  "session_breadcrumb_failed_to_open": "Failed to open",
+  "session_breadcrumb_open_in_codex_desktop": "Open in Codex Desktop",
+  "session_breadcrumb_open_in_claude_code": "Open in Claude Code",
+  "session_breadcrumb_summary_mode": "Summary mode",
+  "session_breadcrumb_summary_mode_tooltip": "Tool results, thinking, and diffs are missing from this transcript. Full fidelity needs the agy-reader sidecar — install it, or if installed, let it catch up. Click to learn how.",
+  "session_breadcrumb_malformed_lines": [
+    {
+      "declarations": ["input count", "local countPlural = count: plural"],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "{count} malformed line",
+        "countPlural=other": "{count} malformed lines"
+      }
+    }
+  ],
+  "session_breadcrumb_malformed_lines_tooltip": [
+    {
+      "declarations": ["input count", "local countPlural = count: plural"],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "{count} line in the source file could not be parsed",
+        "countPlural=other": "{count} lines in the source file could not be parsed"
+      }
+    }
+  ],
+  "session_breadcrumb_antigravity_decode_confidence_low": "Unverified schema",
+  "session_breadcrumb_antigravity_decode_confidence_low_tooltip": "This session came from an unrecognized (newer) Antigravity build. The decode is heuristic and may be incomplete or wrong.",
+  "session_find_find_in_session": "Find in session",
+  "session_find_placeholder": "Find in session...",
+  "session_find_search_query": "Search query",
+  "session_find_no_results": "No results",
+  "session_find_match_count": "{current} of {total}",
+  "session_find_previous_match_title": "Previous match (⇧ ↩)",
+  "session_find_previous_match": "Previous match",
+  "session_find_next_match_title": "Next match (↩)",
+  "session_find_next_match": "Next match",
+  "session_find_close_title": "Close (⎋)",
+  "session_find_close": "Close find bar",
+  "message_list_empty": "Select a session to view messages",
+  "message_list_loading": "Loading messages...",
+  "message_list_session_not_found": "Session not found",
+  "message_list_session_not_found_hint": "It may not have synced yet, or the link points to a session that no longer exists.",
+  "message_list_session_not_found_retry": "Try again",
+  "read_progress_boundary": "Read progress boundary",
+  "read_progress_new_messages": "New messages",
+  "read_progress_earlier_messages": "Earlier messages",
+  "read_progress_unread_messages": "Unread messages",
+  "code_block_copy_code_block": "Copy code block",
+  "code_block_copied_code_block": "Copied code block",
+  "code_block_copy_code": "Copy code",
+  "code_block_copied": "Скопировано!",
+  "message_content_role_assistant": "Ассистент",
+  "message_content_role_agent": "Агент",
+  "message_content_role_teammate": "Teammate",
+  "message_content_role_user": "Пользователь",
+  "message_content_copy_message": "Copy message",
+  "message_content_copied_message": "Copied message",
+  "message_content_copied": "Скопировано!",
+  "message_content_code_collapsed_with_language": "Code block collapsed · {language} · Expand",
+  "message_content_code_collapsed": "Code block collapsed · Expand",
+  "message_content_code_expanded_with_language": "Code block expanded · {language} · Collapse",
+  "message_content_code_expanded": "Code block expanded · Collapse",
+  "message_content_unpin_message": "Unpin message",
+  "message_content_pin_message": "Pin message",
+  "message_content_unpinned": "Unpinned",
+  "message_content_pinned": "Закреплённое",
+  "message_content_running_duration": "running {duration}+",
+  "message_content_turn_summary": [
+    {
+      "declarations": ["input count", "input duration", "local countPlural = count: plural"],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "turn {duration} · {count} call",
+        "countPlural=other": "turn {duration} · {count} calls"
+      }
+    }
+  ],
+  "message_content_running_turn_summary": [
+    {
+      "declarations": ["input count", "input duration", "local countPlural = count: plural"],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "running {duration}+ · {count} call",
+        "countPlural=other": "running {duration}+ · {count} calls"
+      }
+    }
+  ],
+  "tool_call_group_call_count": [
+    {
+      "declarations": ["input count", "local countPlural = count: plural"],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "{count} tool call",
+        "countPlural=other": "{count} tool calls"
+      }
+    }
+  ],
+  "tool_call_group_copy_tool_calls": "Copy tool calls",
+  "tool_call_group_copied_tool_calls": "Copied tool calls",
+  "tool_call_group_copied": "Скопировано!",
+  "tool_call_group_running_duration": "running {duration}+",
+  "parallel_group_label": "parallel",
+  "parallel_group_call_count": [
+    {
+      "declarations": ["input count", "local countPlural = count: plural"],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "{count} call",
+        "countPlural=other": "{count} calls"
+      }
+    }
+  ],
+  "parallel_group_running": "running...",
+  "subagent_inline_label": "Subagent session",
+  "subagent_inline_message_count": [
+    {
+      "declarations": ["input count", "local countPlural = count: plural"],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "{count} message",
+        "countPlural=other": "{count} messages"
+      }
+    }
+  ],
+  "subagent_inline_open_as_full_session": "Open as full session",
+  "subagent_inline_open_session": "Open session",
+  "subagent_inline_failed_to_load": "Не удалось загрузить",
+  "shared_failed_to_load": "Не удалось загрузить",
+  "subagent_inline_loading": "Загрузка…",
+  "subagent_inline_no_messages": "No messages",
+  "skill_block_label": "Skill: {name}",
+  "tool_block_copy_input": "Copy input",
+  "tool_block_copied_input": "Copied input",
+  "tool_block_copy_output": "Copy output",
+  "tool_block_copied_output": "Copied output",
+  "tool_block_output": "output",
+  "tool_block_raw": "Raw",
+  "tool_block_formatted": "Formatted",
+  "tool_block_output_mode": "Output format",
+  "tool_block_history": "history",
+  "tool_block_status_label": "status:",
+  "tool_block_source_label": "source:",
+  "tool_block_agent_label": "agent:",
+  "tool_block_show_less": "show less",
+  "tool_block_show_all_lines": [
+    {
+      "declarations": ["input count", "local countPlural = count: plural"],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "show all {count} line",
+        "countPlural=other": "show all {count} lines"
+      }
+    }
+  ],
+  "tool_block_image_alt": "Image from tool output",
+  "tool_block_image_open": "Show image at full size",
+  "tool_block_image_close": "Close full-size image",
+  "thinking_block_label": "Размышления",
+  "compact_boundary_title": "Context window compacted at this point",
+  "compact_boundary_label": "Context compacted",
+  "transcript_empty_messages": [
+    {
+      "declarations": ["input count", "local countPlural = count: plural"],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "{count} empty message",
+        "countPlural=other": "{count} empty messages"
+      }
+    }
+  ],
+  "transcript_empty_messages_title": "These messages have no text, thinking, or tool calls",
+  "compact_boundary_show_full_summary": "Show full summary",
+  "sidebar_session_count": [
+    {
+      "declarations": ["input count", "input countLabel", "local countPlural = count: plural"],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "{countLabel} session",
+        "countPlural=other": "{countLabel} sessions"
+      }
+    }
+  ],
+  "sidebar_loading": "loading",
+  "sidebar_multi_select": "Multi-select",
+  "sidebar_exit_multi_select": "Exit multi-select",
+  "sidebar_select_all_visible": "Select all visible",
+  "sidebar_clear_selection": "Снять выделение",
+  "sidebar_batch_clear": "Clear",
+  "sidebar_batch_all": "Все",
+  "sidebar_selected_count": "{countLabel} selected",
+  "sidebar_move_selected_to_trash": "Move selected sessions to trash",
+  "sidebar_deleting": "Deleting...",
+  "sidebar_delete": "Delete",
+  "sidebar_cancel": "Cancel",
+  "sidebar_status": "Status",
+  "sidebar_active": "Активные",
+  "sidebar_active_title": "Last activity within 10 minutes",
+  "sidebar_stale": "Неактивные",
+  "sidebar_stale_title": "Flagged session, idle 10 minutes to 1 hour",
+  "sidebar_unclean": "Некорректно завершённые",
+  "sidebar_unclean_title": "Terminated mid tool call (over 1 hour idle)",
+  "sidebar_expand_group": "Expand {name} group",
+  "sidebar_collapse_group": "Collapse {name} group",
+  "sidebar_subagents": "Subagents",
+  "sidebar_team": "Team",
+  "sidebar_filters_filter_sessions": "Фильтр сессий",
+  "sidebar_filters_filters": "Фильтры",
+  "sidebar_filters_display": "Отображение",
+  "sidebar_filters_group_by_agent": "Группировать по агенту",
+  "sidebar_filters_group_by_project": "Группировать по проекту",
+  "sidebar_filters_starred": "Избранное",
+  "sidebar_filters_starred_only": "Только избранное",
+  "sidebar_filters_activity": "Активность",
+  "sidebar_filters_recently_active": "Недавно активные",
+  "sidebar_filters_session_type": "Тип сессий",
+  "sidebar_filters_hide_single_turn": "Скрыть с одним запросом",
+  "sidebar_filters_include_automated": "Включить автоматические сессии",
+  "sidebar_filters_project": "Проект",
+  "sidebar_filters_hide_unknown": "Скрыть неизвестные",
+  "sidebar_filters_agent": "Агент",
+  "sidebar_filters_search_agents": "Поиск агентов…",
+  "sidebar_filters_all_agents": "Все агенты",
+  "sidebar_filters_no_match": "Совпадений нет",
+  "sidebar_filters_no_agents": "Нет агентов",
+  "sidebar_filters_machine": "Компьютер",
+  "sidebar_filters_machine_loading": "Загрузка компьютеров…",
+  "sidebar_filters_machine_update_failed": "Не удалось обновить фильтр компьютера. Попробуйте ещё раз.",
+  "sidebar_filters_search_machines": "Поиск компьютеров…",
+  "sidebar_filters_no_machines": "Нет компьютеров",
+  "sidebar_filters_min_prompts": "Минимум запросов",
+  "sidebar_filters_clear_filters": "Сбросить фильтры",
+  "sidebar_filters_labels": "Метки",
+  "sidebar_filters_label_input": "Фильтр по метке",
+  "sidebar_filters_label_placeholder": "Добавьте метку, например ticket=example",
+  "sidebar_filters_pull_request": "Pull request",
+  "sidebar_filters_pull_request_input": "Фильтр по pull request",
+  "sidebar_filters_pull_request_placeholder": "owner/repo#123",
+  "sidebar_row_expand": "Expand",
+  "sidebar_row_collapse": "Collapse",
+  "sidebar_row_select_session": "Select session",
+  "sidebar_row_deselect_session": "Deselect session",
+  "sidebar_row_star_session": "Star session",
+  "sidebar_row_unstar_session": "Unstar session",
+  "sidebar_row_rename": "Rename",
+  "sidebar_row_open_in_new_tab": "Open in new tab",
+  "sidebar_row_delete": "Delete",
+  "sidebar_row_change_project": "Change project…",
+  "shared_all_projects": "Все проекты",
+  "shared_project_filter_placeholder": "Поиск проектов…",
+  "shared_select_project": "Выберите проект",
+  "shared_no_matching_projects": "Проекты не найдены",
+  "shared_active_filters_label": "Фильтры:",
+  "shared_active_filters_clear_project": "Сбросить фильтр проекта",
+  "shared_active_filters_remove_machine": "Убрать фильтр {machine}",
+  "shared_active_filters_remove_agent": "Убрать фильтр {agent}",
+  "shared_active_filters_clear_min_prompts": "Сбросить минимальное число запросов",
+  "shared_active_filters_min_prompts": "Запросов: ≥{count}",
+  "shared_active_filters_clear_recently_active": "Сбросить фильтр недавней активности",
+  "shared_active_filters_active24h": "Активные за 24 ч",
+  "shared_active_filters_clear_hidden_unknown": "Показать неизвестные проекты",
+  "shared_active_filters_unknown_hidden": "Неизвестные скрыты",
+  "shared_active_filters_remove_project": "Убрать фильтр проекта {project}",
+  "shared_active_filters_clear_single_turn": "Сбросить фильтр сессий с одним запросом",
+  "shared_active_filters_single_turn_hidden": "С одним запросом скрыты",
+  "shared_active_filters_clear_automated": "Сбросить фильтр автоматических сессий",
+  "shared_active_filters_automated_included": "С автоматическими сессиями",
+  "shared_active_filters_remove_model": "Убрать фильтр модели {model}",
+  "shared_active_filters_remove_label": "Убрать фильтр метки {label}",
+  "shared_active_filters_clear_pull_request": "Сбросить фильтр pull request",
+  "shared_active_filters_clear_all": "Сбросить все фильтры",
+  "shared_active_filters_clear_all_label": "Сбросить всё",
+  "shared_range_select_date_range": "Выберите период",
+  "shared_range_relative_window": "Скользящий период",
+  "shared_range_calendar_period": "Календарный период",
+  "shared_range_previous_period": "Предыдущий период",
+  "shared_range_next_period": "Следующий период",
+  "shared_range_previous_year": "Предыдущий год",
+  "shared_range_next_year": "Следующий год",
+  "shared_range_previous_years": "Предыдущие годы",
+  "shared_range_next_years": "Следующие годы",
+  "shared_range_choose_month": "Выберите месяц",
+  "shared_range_choose_year": "Выберите год",
+  "shared_range_from": "С",
+  "shared_range_to": "По",
+  "shared_range_tab_relative": "Скользящий",
+  "shared_range_tab_calendar": "Календарный",
+  "shared_range_tab_custom": "Произвольный",
+  "shared_range_preset_all": "Все",
+  "shared_range_preset_all_time": "Всё время",
+  "shared_range_preset_last_year": "Последний год",
+  "shared_range_calendar_day": "День",
+  "shared_range_calendar_week": "Неделя",
+  "shared_range_calendar_month": "Месяц",
+  "shared_range_week_of": "Неделя с {date}",
+  "shared_range_custom_range": "Произвольный период",
+  "shared_range_last_days": [
+    {
+      "declarations": ["input count", "local countPlural = count: plural"],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "За последний {count} день",
+        "countPlural=few": "За последние {count} дня",
+        "countPlural=many": "За последние {count} дней",
+        "countPlural=other": "За последние {count} дня"
+      }
+    }
+  ],
+  "shared_refresh_not_updated": "Не обновлялось",
+  "shared_refresh_just_now": "Обновлено только что",
+  "shared_refresh_minutes_ago": "Обновлено {count} мин назад",
+  "shared_refresh_hours_ago": "Обновлено {count} ч назад",
+  "shared_refresh_days_ago": "Обновлено {count} дн назад",
+  "shared_refresh_duration_ms": "{value} мс",
+  "shared_refresh_duration_seconds": "{value} с",
+  "shared_refresh_duration_minutes": "{minutes} мин {seconds} с",
+  "shared_refresh_age_with_duration": "{age} · {duration}",
+  "shared_refresh_in_progress": "Обновление…",
+  "shared_refresh_step_summary": "Сводка",
+  "shared_refresh_step_activity": "Активность",
+  "shared_refresh_step_heatmap": "Тепловая карта",
+  "shared_refresh_step_projects": "Проекты",
+  "shared_refresh_step_hour_of_week": "Часы недели",
+  "shared_refresh_step_session_shape": "Профиль сессий",
+  "shared_refresh_step_velocity": "Скорость",
+  "shared_refresh_step_tools": "Инструменты",
+  "shared_refresh_step_skills": "Навыки",
+  "shared_refresh_step_top_sessions": "Ведущие сессии",
+  "shared_refresh_step_context_summary": "Сводка за период",
+  "shared_refresh_step_attribution_summary": "Распределение стоимости",
+  "shared_refresh_step_reference_summary": "Распределение стоимости за период",
+  "shared_refresh_step_zoom": "Группы проектов",
+  "shared_refresh_step_signals": "Сигналы",
+  "shared_refresh_step_comparison": "Сравнение",
+  "shared_refresh_step_pairwise": "Попарное сравнение",
+  "shared_refresh_step_report": "Отчёт",
+  "shared_refresh_step_sessions": "Сессии",
+  "shared_refresh_step_usage": "Использование",
+  "shared_refresh_step_scan": "Сканирование активности",
+  "shared_refresh_step_finalize": "Завершение",
+  "shared_refresh_step_entries": "Записи",
+  "shared_refresh_step_status": "Состояние извлечения",
+  "shared_refresh_phase_wait": "Сервер",
+  "shared_refresh_phase_download": "Передача",
+  "shared_refresh_phase_apply": "Отображение",
+  "shared_relative_just_now": "только что",
+  "shared_relative_minutes_ago": "{count} мин назад",
+  "shared_relative_hours_ago": "{count} ч назад",
+  "shared_relative_days_ago": "{count} дн назад",
+  "shared_retry": "Повторить",
+  "shared_refresh": "Обновить",
+  "shared_no_data": "Нет данных",
+  "shared_no_data_for_period": "Нет данных за этот период",
+  "shared_no_sessions_in_range": "За этот период нет сессий",
+  "shared_none": "Нет",
+  "shared_other": "Прочее",
+  "shared_no_branch": "(без ветки)",
+  "shared_unknown": "неизвестно",
+  "analytics_refresh": "Обновить аналитику",
+  "analytics_export_csv": "Экспорт в CSV",
+  "analytics_activity_by_day_hour": "Активность по дням и часам",
+  "analytics_summary_sessions": "Сессии",
+  "analytics_summary_sessions_scope": "{range} · включая субагентов",
+  "analytics_summary_messages": "Сообщения",
+  "analytics_summary_projects": "Проекты",
+  "analytics_summary_active_days": "Дни активности",
+  "analytics_summary_messages_per_session": "Сообщений на сессию",
+  "analytics_summary_median_p90": "медиана {median} / p90 {p90}",
+  "analytics_summary_concentration": "Концентрация",
+  "analytics_status_active": "Активные",
+  "analytics_status_stale": "Неактивные",
+  "analytics_status_unclean": "Некорректно завершённые",
+  "analytics_filters_clear_date": "Сбросить фильтр даты",
+  "analytics_filters_remove_status": "Убрать статус {status} из фильтра",
+  "analytics_filters_status": "Статус: {status}",
+  "analytics_filters_only_automated": "Только автоматические",
+  "analytics_filters_clear_time": "Сбросить фильтр времени",
+  "analytics_agent_comparison_title": "Сравнение агентов",
+  "analytics_agent_comparison_empty": "Нет данных для сравнения (нужно не менее двух агентов)",
+  "analytics_col_agent": "Агент",
+  "analytics_col_project": "Проект",
+  "analytics_col_sessions": "Сессии",
+  "analytics_col_messages": "Сообщения",
+  "analytics_col_cycle_p50": "Цикл p50",
+  "analytics_col_cycle_p90": "Цикл p90",
+  "analytics_col_msgs_min": "Сообщений/мин",
+  "analytics_col_tools_min": "Вызовов/мин",
+  "analytics_col_tool_calls": "Вызовы инструментов",
+  "analytics_col_top_categories": "Ведущие категории",
+  "analytics_col_group": "Группа",
+  "analytics_col_msgs_active_min": "Сообщений / мин активности",
+  "analytics_col_chars_active_min": "Символов / мин активности",
+  "analytics_col_tools_active_min": "Вызовов / мин активности",
+  "analytics_tool_usage_title": "Использование инструментов",
+  "analytics_tool_usage_call_count": [
+    {
+      "declarations": ["input count", "input countLabel", "local countPlural = count: plural"],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "{countLabel} вызов",
+        "countPlural=few": "{countLabel} вызова",
+        "countPlural=many": "{countLabel} вызовов",
+        "countPlural=other": "{countLabel} вызова"
+      }
+    }
+  ],
+  "analytics_tool_usage_trend_tooltip": "{date} | всего {total} | {parts}",
+  "analytics_tool_usage_empty": "Нет данных об использовании инструментов",
+  "analytics_tool_usage_loading": "Загрузка данных об инструментах…",
+  "analytics_tool_usage_top_tools": "Ведущие инструменты",
+  "analytics_tool_usage_sessions": [
+    {
+      "declarations": ["input count", "input countLabel", "local countPlural = count: plural"],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "{countLabel} сессия",
+        "countPlural=few": "{countLabel} сессии",
+        "countPlural=many": "{countLabel} сессий",
+        "countPlural=other": "{countLabel} сессии"
+      }
+    }
+  ],
+  "analytics_by_category": "По категориям",
+  "analytics_by_agent": "По агентам",
+  "analytics_by_project": "По проектам",
+  "analytics_weekly_trend": "Динамика по неделям",
+  "analytics_top_sessions_title": "Ведущие сессии",
+  "analytics_top_sessions_filter_unclean": "Показать некорректно завершённые сессии",
+  "analytics_top_sessions_unclean_count": "Некорректно завершено: {countLabel}",
+  "analytics_top_sessions_by_messages": "По сообщениям",
+  "analytics_top_sessions_by_duration": "По длительности",
+  "analytics_top_sessions_by_output_tokens": "По выходным токенам",
+  "analytics_top_sessions_active_duration": "Время активности",
+  "analytics_top_sessions_total_duration": "Всего: {duration}",
+  "analytics_projects_title": "Проекты",
+  "analytics_project_messages": [
+    {
+      "declarations": ["input count", "input countLabel", "local countPlural = count: plural"],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "{countLabel} сообщение",
+        "countPlural=few": "{countLabel} сообщения",
+        "countPlural=many": "{countLabel} сообщений",
+        "countPlural=other": "{countLabel} сообщения"
+      }
+    }
+  ],
+  "analytics_project_sessions": [
+    {
+      "declarations": ["input count", "input countLabel", "local countPlural = count: plural"],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "{countLabel} сессия",
+        "countPlural=few": "{countLabel} сессии",
+        "countPlural=many": "{countLabel} сессий",
+        "countPlural=other": "{countLabel} сессии"
+      }
+    }
+  ],
+  "analytics_total_count": "Всего: {countLabel}",
+  "analytics_projects_empty": "Нет данных о проектах",
+  "analytics_activity_timeline_tooltip_value": "{label}: {value} {metric}",
+  "analytics_activity_timeline_tooltip_messages": "пользователь: {user} / ассистент: {assistant} / прочее: {other}",
+  "analytics_activity_timeline_mode_absolute": "Абсолютные значения",
+  "analytics_activity_timeline_mode_percent": "Проценты",
+  "analytics_metric_messages": "Сообщения",
+  "analytics_metric_sessions": "Сессии",
+  "analytics_metric_output_tokens": "Выходные токены",
+  "analytics_granularity_day": "День",
+  "analytics_granularity_week": "Неделя",
+  "analytics_granularity_month": "Месяц",
+  "analytics_granularity_label": "Группировка",
+  "analytics_activity_empty": "Нет данных об активности",
+  "analytics_activity_title": "Активность",
+  "analytics_heatmap_showing_recent_year": "Показан последний год",
+  "analytics_hour_of_week_tooltip": [
+    {
+      "declarations": [
+        "input day",
+        "input hour",
+        "input count",
+        "input countLabel",
+        "local countPlural = count: plural"
+      ],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "{day} {hour}:00 — {countLabel} сообщение",
+        "countPlural=few": "{day} {hour}:00 — {countLabel} сообщения",
+        "countPlural=many": "{day} {hour}:00 — {countLabel} сообщений",
+        "countPlural=other": "{day} {hour}:00 — {countLabel} сообщения"
+      }
+    }
+  ],
+  "analytics_session_shape_title": "Профиль сессий",
+  "analytics_session_shape_duration": "Длительность",
+  "analytics_session_shape_autonomy": "Автономность",
+  "analytics_session_shape_session_count": [
+    {
+      "declarations": ["input count", "input countLabel", "local countPlural = count: plural"],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "{countLabel} сессия",
+        "countPlural=few": "{countLabel} сессии",
+        "countPlural=many": "{countLabel} сессий",
+        "countPlural=other": "{countLabel} сессии"
+      }
+    }
+  ],
+  "analytics_velocity_title": "Скорость",
+  "analytics_velocity_overview": "Обзор",
+  "analytics_velocity_by_size": "По размеру",
+  "analytics_velocity_turn_cycle_p50": "Цикл запроса (p50)",
+  "analytics_velocity_turn_cycle_p90": "Цикл запроса (p90)",
+  "analytics_velocity_first_response_p50": "Первый ответ (p50)",
+  "analytics_velocity_first_response_p90": "Первый ответ (p90)",
+  "analytics_velocity_no_breakdown": "Нет подробных данных",
+  "analytics_grade_distribution_title": "Распределение оценок",
+  "analytics_outcome_distribution_title": "Распределение результатов",
+  "analytics_outcome_count": "{outcome}: {count}",
+  "analytics_health_trend_title": "Динамика качества",
+  "analytics_health_trend_no_scored_sessions": "нет оценённых сессий",
+  "analytics_health_trend_caption": "Средняя оценка качества за день · цвет столбца соответствует оценке",
+  "analytics_no_trend_data": "Нет данных о динамике",
+  "analytics_session_health_title": "Качество сессий",
+  "analytics_session_health_scored": "Оценено: {countLabel}",
+  "analytics_session_health_unscored": "Без оценки: {countLabel}",
+  "analytics_session_health_avg_score": "Средняя оценка",
+  "analytics_session_health_grade": "Оценка {grade}",
+  "analytics_session_health_completed": "Завершены",
+  "analytics_session_health_errored": "С ошибками",
+  "analytics_session_health_tool_failures": "Ошибки инструментов",
+  "analytics_session_health_compactions": "Сжатия контекста",
+  "analytics_session_health_mid_task": "в ходе задачи",
+  "analytics_session_health_avg_per_session": "в среднем {value} на сессию",
+  "analytics_top_skills_title": "Ведущие навыки",
+  "analytics_top_skills_never": "Никогда",
+  "analytics_top_skills_tooltip": [
+    {
+      "declarations": [
+        "input skill",
+        "input count",
+        "input countLabel",
+        "input pct",
+        "local countPlural = count: plural"
+      ],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "{skill}: {countLabel} вызов ({pct}%)",
+        "countPlural=few": "{skill}: {countLabel} вызова ({pct}%)",
+        "countPlural=many": "{skill}: {countLabel} вызовов ({pct}%)",
+        "countPlural=other": "{skill}: {countLabel} вызова ({pct}%)"
+      }
+    }
+  ],
+  "analytics_top_skills_count": [
+    {
+      "declarations": [
+        "input calls",
+        "input callsLabel",
+        "input skills",
+        "input skillsLabel",
+        "local callsPlural = calls: plural",
+        "local skillsPlural = skills: plural"
+      ],
+      "selectors": ["callsPlural", "skillsPlural"],
+      "match": {
+        "callsPlural=one, skillsPlural=one": "{callsLabel} вызов · {skillsLabel} навык",
+        "callsPlural=one, skillsPlural=few": "{callsLabel} вызов · {skillsLabel} навыка",
+        "callsPlural=one, skillsPlural=many": "{callsLabel} вызов · {skillsLabel} навыков",
+        "callsPlural=one, skillsPlural=other": "{callsLabel} вызов · {skillsLabel} навыка",
+        "callsPlural=few, skillsPlural=one": "{callsLabel} вызова · {skillsLabel} навык",
+        "callsPlural=few, skillsPlural=few": "{callsLabel} вызова · {skillsLabel} навыка",
+        "callsPlural=few, skillsPlural=many": "{callsLabel} вызова · {skillsLabel} навыков",
+        "callsPlural=few, skillsPlural=other": "{callsLabel} вызова · {skillsLabel} навыка",
+        "callsPlural=many, skillsPlural=one": "{callsLabel} вызовов · {skillsLabel} навык",
+        "callsPlural=many, skillsPlural=few": "{callsLabel} вызовов · {skillsLabel} навыка",
+        "callsPlural=many, skillsPlural=many": "{callsLabel} вызовов · {skillsLabel} навыков",
+        "callsPlural=many, skillsPlural=other": "{callsLabel} вызовов · {skillsLabel} навыка",
+        "callsPlural=other, skillsPlural=one": "{callsLabel} вызова · {skillsLabel} навык",
+        "callsPlural=other, skillsPlural=few": "{callsLabel} вызова · {skillsLabel} навыка",
+        "callsPlural=other, skillsPlural=many": "{callsLabel} вызова · {skillsLabel} навыков",
+        "callsPlural=other, skillsPlural=other": "{callsLabel} вызова · {skillsLabel} навыка"
+      }
+    }
+  ],
+  "analytics_top_skills_agent_breakdown": "По агентам",
+  "analytics_top_skills_agents": "Агенты",
+  "analytics_top_skills_projects": "Проекты: {projects}",
+  "analytics_top_skills_empty": "Нет данных об использовании навыков",
+  "analytics_skill_trend_title": "Динамика использования навыков",
+  "analytics_skill_trend_other": "Прочее",
+  "analytics_skill_trend_legend": "Показать или скрыть навыки",
+  "analytics_skill_trend_chart_label": "Динамика использования навыков. Для просмотра дат используйте стрелки влево и вправо.",
+  "analytics_skill_trend_date": "Дата",
+  "analytics_skill_trend_loading": "Загрузка данных о навыках…",
+  "analytics_skill_trend_empty": "Нет данных об использовании навыков",
+  "usage_model": "Модель",
+  "usage_models": "Models",
+  "usage_mode_label": "Usage metric",
+  "usage_mode_cost": "Cost",
+  "usage_mode_tokens": "Tokens",
+  "usage_token_types_label": "Token types",
+  "usage_token_types_all": "Token types: All",
+  "usage_token_types_single": "Token types: {tokenType}",
+  "usage_token_types_multiple": "Token types: {countLabel} selected",
+  "usage_token_type_input": "Input",
+  "usage_token_type_cache_write": "Cache Writes",
+  "usage_token_type_cache_read": "Cached Read",
+  "usage_token_type_output": "Output",
+  "usage_selected_tokens": "Selected Tokens",
+  "usage_top_sessions_by_selected_tokens": "Top Sessions by {tokenTypes}",
+  "usage_refresh": "Refresh usage data",
+  "usage_summary_total_cost": "Total Cost",
+  "usage_summary_total_tokens": "Total Tokens",
+  "usage_summary_copilot_ai_credits": "Copilot AI Credits",
+  "usage_summary_unsupported_copilot_no_token_data": "Copilot sessions matched this range, but Copilot does not record per-message token usage.",
+  "usage_summary_unsupported_generic": "Matching sessions do not expose token usage data.",
+  "usage_summary_total_input": "Total Input",
+  "usage_summary_daily_burn": "Daily Burn",
+  "usage_summary_daily_burn_tokens": "Daily Burn",
+  "usage_summary_peak_day": "Peak Day",
+  "usage_summary_peak_day_tokens": "Peak Day",
+  "usage_summary_cache_hit": "Cache Hit",
+  "usage_summary_vs_prior": "{value} vs prior",
+  "usage_summary_cached_tokens": "{value} cached",
+  "usage_summary_avg_day": "avg/day",
+  "usage_filter_all": "{label}: все",
+  "usage_filter_selected": "{label}: выбрано {countLabel}",
+  "usage_filter_none": "{label}: нет",
+  "usage_filter_hidden": "{label}: скрыто {countLabel}",
+  "usage_filter_search": "Поиск…",
+  "usage_filter_select_all": "Выбрать всё",
+  "usage_filter_deselect_all": "Снять выделение",
+  "usage_filter_all_items": [
+    {
+      "declarations": ["input label", "input count", "local countPlural = count: plural"],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=other": "Все: {label}"
+      }
+    }
+  ],
+  "usage_cost_over_time_title": "Cost Over Time",
+  "usage_tokens_over_time_title": "Tokens Over Time",
+  "usage_cost_attribution_title": "Cost Attribution",
+  "usage_tokens_attribution_title": "Token Attribution",
+  "usage_attribution_treemap": "Treemap",
+  "usage_attribution_list": "List",
+  "usage_label_scale_title": "Label size scale",
+  "usage_label_scale_linear": "Linear",
+  "usage_label_scale_sqrt": "Sqrt",
+  "usage_label_scale_log": "Log",
+  "usage_chart_style": "Chart style",
+  "usage_chart_style_smooth": "Smooth",
+  "usage_chart_style_lines": "Lines",
+  "usage_chart_style_bars": "Bars",
+  "usage_chart_day_label": "{date}: {value}",
+  "usage_cache_efficiency_title": "Cache Efficiency",
+  "usage_cache_reads": "Cache Reads",
+  "usage_cache_writes": "Cache Writes",
+  "usage_uncached_input": "Uncached Input",
+  "usage_output": "Output",
+  "usage_no_token_data": "No token data",
+  "usage_saved_vs_uncached": "{cost} saved vs uncached",
+  "usage_more_than_uncached": "{cost} more than uncached",
+  "usage_top_sessions_by_cost": "Top Sessions by Cost",
+  "usage_top_sessions_by_tokens": "Top Sessions by Tokens",
+  "settings_title": "Настройки",
+  "settings_group_preferences": "Предпочтения",
+  "settings_group_data": "Данные",
+  "settings_group_connections": "Подключения",
+  "settings_nav_github": "GitHub",
+  "settings_nav_remote_access": "Удалённый доступ",
+  "settings_search_placeholder": "Поиск настроек…",
+  "settings_search_aria": "Поиск настроек",
+  "settings_search_empty": "Подходящих настроек нет",
+  "settings_search_clear": "Очистить поиск",
+  "settings_search_result": "Раздел: {category}",
+  "settings_search_keywords_appearance": "тема контраст компоновка шрифт блоки масштаб цвета дальтонизм",
+  "settings_search_keywords_language": "язык локализация перевод русский language locale translation",
+  "settings_search_keywords_date_ranges": "период даты связанные страницы",
+  "settings_search_keywords_terminal": "терминал продолжить запуск команда аргументы буфер обмена",
+  "settings_search_keywords_agent_directories": "агенты папки пути поиск сессии",
+  "settings_search_keywords_worktree_mappings": "сопоставление проектов пути правила классификации",
+  "settings_search_keywords_embeddings": "эмбеддинги семантический поиск индекс векторы",
+  "settings_search_keywords_github": "GitHub Gist токен публикация",
+  "settings_search_keywords_remote_access": "удалённый сервер подключение токен сеть",
+  "settings_loading": "Загрузка настроек…",
+  "settings_save_error_label": "Ошибка",
+  "settings_load_failed": "Не удалось загрузить настройки",
+  "settings_save_failed": "Не удалось сохранить настройки",
+  "settings_date_ranges_title": "Периоды дат",
+  "settings_date_ranges_description": "Синхронизирует выбранные периоды на страницах «Сессии», «Использование», «Активность», «Тенденции» и «Качество».",
+  "settings_date_ranges_link": "Синхронизировать периоды на страницах",
+  "settings_resync_title_unavailable": "Полная синхронизация недоступна в режиме чтения",
+  "settings_resync_unavailable_hint": "Недоступно при подключении к серверу только для чтения",
+  "settings_resync_hint": "Повторно просканировать все файлы сессий",
+  "settings_language_title": "Язык",
+  "settings_language_description": "Выберите язык интерфейса.",
+  "settings_language_label": "Язык интерфейса",
+  "settings_language_english": "Английский",
+  "settings_language_simplified_chinese": "Китайский (упрощённый)",
+  "settings_language_traditional_chinese": "Китайский (традиционный)",
+  "settings_language_korean": "Корейский",
+  "settings_language_french": "Французский",
+  "settings_language_japanese": "Японский",
+  "settings_language_azerbaijani": "Азербайджанский",
+  "settings_language_spanish": "Испанский",
+  "settings_language_no_results": "Языки не найдены",
+  "nav_recent_edits": "Последние изменения",
+  "nav_data": "Данные",
+  "data_load_failed": "Failed to load the project inventory",
+  "data_projects_heading": "Проекты",
+  "data_view_toggle_label": "Data view",
+  "data_view_inventory": "Inventory",
+  "data_view_rules": "Project mapping rules",
+  "data_summary_projects": [
+    {
+      "declarations": [
+        "input count",
+        "local countPlural = count: plural",
+        "local countNumber = count: number"
+      ],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "{countNumber} project",
+        "countPlural=other": "{countNumber} projects"
+      }
+    }
+  ],
+  "data_summary_sessions": [
+    {
+      "declarations": [
+        "input count",
+        "local countPlural = count: plural",
+        "local countNumber = count: number"
+      ],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "{countNumber} session",
+        "countPlural=other": "{countNumber} sessions"
+      }
+    }
+  ],
+  "data_summary_machines": [
+    {
+      "declarations": [
+        "input count",
+        "local countPlural = count: plural",
+        "local countNumber = count: number"
+      ],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "{countNumber} machine",
+        "countPlural=other": "{countNumber} machines"
+      }
+    }
+  ],
+  "data_summary_folder_suggestions": [
+    {
+      "declarations": [
+        "input count",
+        "local countPlural = count: plural",
+        "local countNumber = count: number"
+      ],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "{countNumber} folder suggestion",
+        "countPlural=other": "{countNumber} folder suggestions"
+      }
+    }
+  ],
+  "data_summary_governed": [
+    {
+      "declarations": [
+        "input count",
+        "local countPlural = count: plural",
+        "local countNumber = count: number"
+      ],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "{countNumber} session governed by rules",
+        "countPlural=other": "{countNumber} sessions governed by rules"
+      }
+    }
+  ],
+  "data_selection_hint": "Click a project, then Shift-click to select a range.",
+  "data_selection_count": [
+    {
+      "declarations": [
+        "input count",
+        "local countPlural = count: plural",
+        "local countNumber = count: number"
+      ],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "{countNumber} project selected",
+        "countPlural=other": "{countNumber} projects selected"
+      }
+    }
+  ],
+  "data_selection_clear": "Clear",
+  "data_batch_workspace_label": "Bulk project correction",
+  "data_batch_heading": [
+    {
+      "declarations": [
+        "input count",
+        "local countPlural = count: plural",
+        "local countNumber = count: number"
+      ],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "{countNumber} project selected",
+        "countPlural=other": "{countNumber} projects selected"
+      }
+    }
+  ],
+  "data_batch_label": "Bulk",
+  "data_batch_folders_heading": "Selected folders",
+  "data_batch_folders_intro": "Observed folders grouped by project, then machine, with larger session groups first within each machine.",
+  "data_batch_outside_selection": "This correction also matches projects outside your selection. Confirm to save the rules for all matching sessions.",
+  "data_date_filter_scope": "Dates filter the project list, folder suggestions, and session previews. Folder corrections can also change sessions outside this range.",
+  "data_batch_correction_heading": "Bulk correction",
+  "data_batch_correction_intro": "All listed folders will receive the destination you choose.",
+  "data_batch_folder_count": [
+    {
+      "declarations": [
+        "input count",
+        "local countPlural = count: plural",
+        "local countNumber = count: number"
+      ],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "{countNumber} folder",
+        "countPlural=other": "{countNumber} folders"
+      }
+    }
+  ],
+  "data_batch_target_project": "Map selected folders to",
+  "data_batch_saving": "Saving bulk correction…",
+  "data_batch_save": [
+    {
+      "declarations": [
+        "input count",
+        "local countPlural = count: plural",
+        "local countNumber = count: number"
+      ],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "Save {countNumber} correction",
+        "countPlural=other": "Save {countNumber} corrections"
+      }
+    }
+  ],
+  "data_batch_partial_save": "Saved {saved} of {count}.",
+  "data_batch_saved": "Bulk correction saved to {project}",
+  "data_filter_projects": "Filter projects",
+  "data_col_project": "Проект",
+  "data_col_sessions": "Сессии",
+  "data_col_machines": "Machines",
+  "data_col_agents": "Агенты",
+  "data_col_cwds": "Directories",
+  "data_col_first_activity": "First activity",
+  "data_col_last_activity": "Last activity",
+  "data_col_rules": "Rules",
+  "data_rules_targeting": [
+    {
+      "declarations": [
+        "input count",
+        "local countPlural = count: plural",
+        "local countNumber = count: number"
+      ],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "{countNumber} enabled rule targets this project",
+        "countPlural=other": "{countNumber} enabled rules target this project"
+      }
+    }
+  ],
+  "data_recorded_original": "Recorded as a rule's original label",
+  "data_loading": "Loading project inventory…",
+  "data_empty": "No projects in the archive",
+  "data_no_matches": "No projects match the filter",
+  "data_unknown_project_key": "The linked project was not found in the archive. Showing all projects.",
+  "data_project_unclassified": "Unclassified",
+  "data_reclassify_original": "Current project: {project}",
+  "data_reclassify_candidates_loading": "Finding session folders…",
+  "data_reclassify_candidates_failed": "Failed to find session folders",
+  "data_reclassify_no_candidates": "No session folders were found for this project.",
+  "data_reclassify_choose_worktree": "Choose a folder",
+  "data_mapping_observed_folders": "Folder suggestions",
+  "data_reclassify_suggestions_intro": "Paths suggested from sessions in this project.",
+  "data_mapping_definition": "Project correction",
+  "data_reclassify_use_for_project": "Use for this project",
+  "data_reclassify_evidence_snapshot": "Snapshot",
+  "data_reclassify_evidence_aggregate": "Aggregate",
+  "data_reclassify_evidence_exact_cwd": "Exact cwd",
+  "data_reclassify_evidence_unavailable": "No usable prefix",
+  "data_reclassify_evidence_suggestion": "Suggestion",
+  "data_reclassify_candidate_sessions": [
+    {
+      "declarations": [
+        "input count",
+        "local countPlural = count: plural",
+        "local countNumber = count: number"
+      ],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "{countNumber} session",
+        "countPlural=other": "{countNumber} sessions"
+      }
+    }
+  ],
+  "data_reclassify_cwd_unavailable": "This folder cannot be mapped safely because it is unavailable or represents a filesystem root.",
+  "data_reclassify_path_prefix": "Path prefix",
+  "data_reclassify_target_project": "Проект",
+  "data_reclassify_use_custom_project": "Использовать проект «{query}»",
+  "data_reclassify_path_unavailable": "Path unavailable",
+  "data_reclassify_previewing": "Calculating full-archive impact…",
+  "data_reclassify_preview_failed": "Failed to preview mapping",
+  "data_reclassify_full_archive_impact": "Full archive impact",
+  "data_reclassify_sessions_matched": [
+    {
+      "declarations": [
+        "input count",
+        "local countPlural = count: plural",
+        "local countNumber = count: number"
+      ],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "{countNumber} session matched",
+        "countPlural=other": "{countNumber} sessions matched"
+      }
+    }
+  ],
+  "data_reclassify_sessions_changing": [
+    {
+      "declarations": [
+        "input count",
+        "local countPlural = count: plural",
+        "local countNumber = count: number"
+      ],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "{countNumber} session will change",
+        "countPlural=other": "{countNumber} sessions will change"
+      }
+    }
+  ],
+  "data_reclassify_projects_affected": [
+    {
+      "declarations": [
+        "input count",
+        "local countPlural = count: plural",
+        "local countNumber = count: number"
+      ],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "{countNumber} project",
+        "countPlural=other": "{countNumber} projects"
+      }
+    }
+  ],
+  "data_reclassify_normalized_target": "Will be saved as {project}",
+  "data_reclassify_multiple_projects": "This prefix affects multiple projects. Review the sample before applying.",
+  "data_reclassify_project_sample_sessions": [
+    {
+      "declarations": [
+        "input count",
+        "local countPlural = count: plural",
+        "local countNumber = count: number"
+      ],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "{countNumber} session",
+        "countPlural=other": "{countNumber} sessions"
+      }
+    }
+  ],
+  "data_reclassify_session_preview_count": [
+    {
+      "declarations": [
+        "input count",
+        "local countPlural = count: plural",
+        "local countNumber = count: number"
+      ],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "{countNumber} session preview",
+        "countPlural=other": "{countNumber} session previews"
+      }
+    }
+  ],
+  "data_reclassify_session_preview_position": "{current} of {count}",
+  "data_reclassify_session_preview_previous": "Previous session",
+  "data_reclassify_session_preview_next": "Next session",
+  "data_reclassify_session_preview_loading": "Loading session preview…",
+  "data_reclassify_session_preview_failed": "Failed to load session preview",
+  "data_reclassify_session_preview_no_message": "No session message available",
+  "data_reclassify_session_preview_current_project": "Current project",
+  "data_reclassify_session_preview_next_project": "After correction",
+  "data_reclassify_session_preview_folder": "Session folder",
+  "data_session_assignment_heading": "Session project",
+  "data_session_assignment_intro": "Changes only this session. Its folder and folder rules stay unchanged.",
+  "data_session_assignment_target": "Move this session to",
+  "data_session_assignment_save": "Assign session",
+  "data_session_assignment_saving": "Assigning…",
+  "data_session_assignment_failed": "Failed to assign session",
+  "data_session_assignment_saved": "Session assigned to {project}",
+  "data_session_assignment_refresh_failed": "The session was assigned, but the project inventory could not refresh.",
+  "data_session_assignment_manual": "Manual override",
+  "data_session_assignment_automatic": "Automatic",
+  "data_session_assignment_use_automatic": "Use automatic",
+  "data_session_assignment_clearing": "Restoring…",
+  "data_session_assignment_cleared": "Session restored to {project}",
+  "data_session_assignment_clear_failed": "Failed to restore automatic project assignment",
+  "data_reclassify_zero_matches": "This prefix matches no sessions in the archive.",
+  "data_reclassify_conflict": "Mappings changed since the preview. The impact has been refreshed; review it before applying.",
+  "data_reclassify_replaces_rule": "This correction replaces an existing project mapping rule.",
+  "data_reclassify_review_impact": "Review impact",
+  "data_reclassify_back": "Back",
+  "data_reclassify_confirm_save": "Confirm and save",
+  "data_reclassify_cancel": "Cancel",
+  "data_reclassify_apply": "Save correction",
+  "data_reclassify_applying": "Saving correction…",
+  "data_reclassify_apply_failed": "Failed to save correction",
+  "data_reclassify_saved": "Project correction saved for {project}",
+  "data_flash_success_label": "Success",
+  "data_reclassify_applied_refresh_failed": "The mapping was saved, but the project inventory could not refresh. Retry only the refresh.",
+  "data_reclassify_retry_refresh": "Retry refresh",
+  "data_reclassify_refreshing": "Обновление…",
+  "data_reclassify_read_only": "Changes are unavailable here. Open the Source Agents View to manage project mapping rules.",
+  "data_reclassify_managed_in_rules": "This correction will be saved as a project mapping rule.",
+  "data_reclassify_open_rules": "Open project mapping rules",
+  "data_workspace_all_projects": "All projects",
+  "data_workspace_map_whole_project": "All folders",
+  "data_workspace_correct_one_folder": "One folder",
+  "data_workspace_close": "Close project details",
+  "data_workspace_activity": "Активность",
+  "data_workspace_activity_range": "{first} – {last}",
+  "data_workspace_no_activity": "No recorded activity timestamps",
+  "data_rules_col_prefix": "Path prefix",
+  "data_rules_col_project": "Target project",
+  "data_rules_col_original": "Original label",
+  "data_rules_col_enabled": "Enabled",
+  "data_rules_col_updated": "Updated",
+  "data_rules_col_governed": "Governed sessions",
+  "data_rules_col_actions": "Actions",
+  "data_rules_read_only": "This store is read-only. Manage rules from the writable archive that ingests this machine's sessions.",
+  "data_rules_view_project": "Show {project} in the inventory",
+  "recent_edits_title": "Recent Edits",
+  "recent_edits_empty": "No file edits found yet.",
+  "recent_edits_loading": "Loading recent edits...",
+  "recent_edits_count": "{count} edits",
+  "recent_edits_truncated": "showing latest {shown} of {total}",
+  "recent_edits_load_more": "Load more",
+  "recent_edits_refresh": "Обновить",
+  "recent_edits_search_placeholder": "Filter by file path",
+  "recent_edits_clear_search": "Clear file-path search",
+  "activity_insight_waiting_server": "Waiting for server version",
+  "activity_insight_generate_insight": "Generate insight",
+  "activity_insight_generation_failed": "Generation failed",
+  "activity_insight_title": "Activity Insight",
+  "activity_insight_open_generated": "Open in Generated insights",
+  "activity_insight_agent_cli_title": "Agent CLI used to generate the insight",
+  "activity_insight_insight_agent": "Insight agent",
+  "activity_insight_loading": "Loading insight…",
+  "activity_insight_generating_phase": "Generating… {phase}",
+  "activity_insight_retry": "Повторить",
+  "activity_insight_empty_text": "No insight yet for this range. Generate one to summarize this period's activity.",
+  "activity_insight_generate": "Generate",
+  "activity_filter_by_agent": "Filter by agent",
+  "activity_all_agents": "All Agents",
+  "activity_filter_by_machine": "Filter by machine",
+  "activity_all_machines": "All Machines",
+  "activity_filter_by_automation": "Filter by automation",
+  "activity_all_sessions": "All Sessions",
+  "activity_interactive": "Interactive",
+  "activity_automated": "Automated",
+  "activity_refresh": "Refresh activity",
+  "activity_project": "Проект",
+  "activity_model": "Модель",
+  "activity_agent": "Агент",
+  "activity_min_unit": " min",
+  "activity_breakdown": "Breakdown",
+  "activity_view_in_data": "View {project} in Data",
+  "activity_breakdown_metric": "Breakdown metric",
+  "activity_agent_min": "Agent-min",
+  "activity_cost": "Cost",
+  "activity_none_lower": "none",
+  "activity_peak_label": "peak {count}",
+  "activity_agent_min_value": "{value} agent-min",
+  "activity_no_sessions_selected_range": "No sessions active in the selected time range.",
+  "activity_output_tokens_value": [
+    {
+      "declarations": ["input count", "input countLabel", "local countPlural = count: plural"],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "{countLabel} output token",
+        "countPlural=other": "{countLabel} output tokens"
+      }
+    }
+  ],
+  "activity_subagents": "Subagents",
+  "activity_subagent": "Subagent",
+  "activity_interactive_peak": "Interactive peak",
+  "activity_subagent_peak": "Subagent peak",
+  "activity_automated_peak": "Automated peak",
+  "activity_combined_peak": "Combined peak",
+  "activity_peak_at": "peak {count} at {time}",
+  "activity_all_sessions_overlay": "All-session overlay",
+  "activity_class_split": "int {int} / sub {sub} / auto {auto}",
+  "activity_message_bucket_label": "{range}, {metric}: {count}. Filter sessions in this time range.",
+  "activity_timeline_metric": "Timeline metric",
+  "activity_user_messages": "Сообщения пользователя",
+  "activity_assistant_messages": "Assistant messages",
+  "activity_messages_per_interval": "Messages per {interval}",
+  "activity_user_messages_help": "Prompts in interactive conversations. Automated runs, subagents, system entries, and tool results are excluded.",
+  "activity_assistant_messages_help": "Assistant messages across the selected sessions. System entries and tool results are excluded.",
+  "activity_concurrency": "Concurrency",
+  "activity_overlay": "Overlay",
+  "activity_overlay_metric": "Concurrency overlay metric",
+  "activity_overlay_none": "Нет",
+  "activity_tokens": "Tokens",
+  "activity_filter_active_in_range": "Filter sessions active in this time range",
+  "activity_mixed": "mixed",
+  "activity_window": "Window",
+  "activity_sessions": "Сессии",
+  "activity_clear_time_filter": "Сбросить фильтр времени",
+  "activity_active_filter": "Active: {label}",
+  "activity_total_count": "{count} total",
+  "activity_session": "Session",
+  "activity_automated_session": "Automated session",
+  "activity_auto": "Auto",
+  "activity_session_kind_split": [
+    {
+      "declarations": [
+        "input interactive",
+        "input subagents",
+        "input subagentsLabel",
+        "input automated",
+        "local subagentPlural = subagents: plural"
+      ],
+      "selectors": ["subagentPlural"],
+      "match": {
+        "subagentPlural=one": "{interactive} interactive / {subagentsLabel} subagent / {automated} automated",
+        "subagentPlural=other": "{interactive} interactive / {subagentsLabel} subagents / {automated} automated"
+      }
+    }
+  ],
+  "activity_interactive_automated_split": "{interactive} interactive / {automated} automated",
+  "activity_untimed_count": "{count} untimed",
+  "activity_peak_concurrency": "Peak Concurrency",
+  "activity_at_time": "at {time}",
+  "activity_active": "Активные",
+  "activity_idle_duration": "{duration} idle",
+  "activity_agent_minutes": "Agent-minutes",
+  "activity_projects": "Проекты",
+  "activity_models": "Models",
+  "activity_total_cost": "Total Cost",
+  "activity_in_progress_as_of": "In progress, as of {time}",
+  "session_list_status_active": "Активные",
+  "session_list_status_stale": "Неактивные",
+  "session_list_status_unclean": "Некорректно завершённые",
+  "analytics_weekday_mon": "Пн",
+  "analytics_weekday_tue": "Вт",
+  "analytics_weekday_wed": "Ср",
+  "analytics_weekday_thu": "Чт",
+  "analytics_weekday_fri": "Пт",
+  "analytics_weekday_sat": "Сб",
+  "analytics_weekday_sun": "Вс",
+  "active_filters_label": "Фильтры:",
+  "active_filters_clear_date": "Сбросить фильтр даты",
+  "active_filters_clear_project": "Сбросить фильтр проекта",
+  "active_filters_remove_filter": "Remove {name} filter",
+  "active_filters_clear_min_prompts": "Сбросить минимальное число запросов",
+  "active_filters_min_prompts": "Запросов: ≥{count}",
+  "active_filters_clear_recently_active": "Сбросить фильтр недавней активности",
+  "active_filters_active24h": "Активные за 24 ч",
+  "active_filters_remove_status": "Убрать статус {status} из фильтра",
+  "active_filters_status_prefix": "Статус: {status}",
+  "active_filters_clear_single_turn": "Сбросить фильтр сессий с одним запросом",
+  "active_filters_single_turn_hidden": "С одним запросом скрыты",
+  "active_filters_clear_automated": "Сбросить фильтр автоматических сессий",
+  "active_filters_only_automated": "Только автоматические",
+  "active_filters_automated_included": "С автоматическими сессиями",
+  "active_filters_clear_time": "Сбросить фильтр времени",
+  "active_filters_clear_all_title": "Сбросить все фильтры",
+  "active_filters_clear_all": "Сбросить всё",
+  "analytics_messages": "Сообщения",
+  "analytics_sessions": "Сессии",
+  "analytics_user_assistant_split": "пользователь: {user} / ассистент: {assistant}",
+  "analytics_day": "День",
+  "analytics_week": "Неделя",
+  "analytics_month": "Месяц",
+  "analytics_retry": "Повторить",
+  "analytics_no_activity_data": "Нет данных об активности",
+  "analytics_agent_comparison": "Сравнение агентов",
+  "analytics_no_comparison_data": "Нет данных для сравнения (нужно не менее двух агентов)",
+  "analytics_agent": "Агент",
+  "analytics_model": "Модель",
+  "analytics_cycle_p50": "Цикл p50",
+  "analytics_msgs_per_min": "Сообщений/мин",
+  "analytics_tools_per_min": "Вызовов/мин",
+  "analytics_tool_calls": "Вызовы инструментов",
+  "analytics_top_categories": "Ведущие категории",
+  "analytics_grade_distribution": "Распределение оценок",
+  "analytics_health_trend": "Динамика качества",
+  "analytics_no_scored_sessions": "нет оценённых сессий",
+  "analytics_session_count": "Сессии: {count}",
+  "analytics_mon": "Пн",
+  "analytics_wed": "Ср",
+  "analytics_fri": "Пт",
+  "analytics_output_tokens": "Выходные токены",
+  "analytics_showing_recent_year": "Показан последний год",
+  "analytics_no_data_period": "Нет данных за этот период",
+  "analytics_messages_count": "Сообщения: {count}",
+  "analytics_outcome_distribution": "Распределение результатов",
+  "analytics_no_data": "Нет данных",
+  "analytics_projects": "Проекты",
+  "analytics_no_project_data": "Нет данных о проектах",
+  "analytics_session_health": "Качество сессий",
+  "analytics_scored_count": "Оценено: {count}",
+  "analytics_unscored_count": "Без оценки: {count}",
+  "analytics_avg_score": "Средняя оценка",
+  "analytics_grade_badge": "Оценка {grade}",
+  "analytics_completed": "Завершены",
+  "analytics_errored": "С ошибками",
+  "analytics_tool_failures": "Ошибки инструментов",
+  "analytics_compactions": "Сжатия контекста",
+  "analytics_mid_task_count": "В ходе задачи: {count}",
+  "analytics_avg_per_session": "в среднем {avg} на сессию",
+  "analytics_project": "Проект",
+  "analytics_duration": "Длительность",
+  "analytics_autonomy": "Автономность",
+  "analytics_session_shape": "Профиль сессий",
+  "analytics_active_days": "Дни активности",
+  "analytics_messages_per_session": "Сообщений на сессию",
+  "analytics_med_p90": "медиана {med} / p90 {p90}",
+  "analytics_concentration": "Концентрация",
+  "analytics_tool_usage": "Использование инструментов",
+  "analytics_calls_count": "Вызовы: {count}",
+  "analytics_no_tool_data": "Нет данных об использовании инструментов",
+  "analytics_top_sessions": "Ведущие сессии",
+  "analytics_filter_unclean": "Показать некорректно завершённые сессии",
+  "analytics_unclean_count": "Некорректно завершено: {count}",
+  "analytics_by_messages": "По сообщениям",
+  "analytics_by_duration": "По длительности",
+  "analytics_by_output_tokens": "По выходным токенам",
+  "analytics_no_sessions_range": "За этот период нет сессий",
+  "analytics_never": "Никогда",
+  "analytics_none": "Нет",
+  "analytics_top_skills": "Ведущие навыки",
+  "analytics_skills_count": "Навыки: {count}",
+  "analytics_agent_breakdown": "По агентам",
+  "analytics_agents": "Агенты",
+  "analytics_projects_breakdown": "Проекты: {breakdown}",
+  "analytics_no_skill_data": "Нет данных об использовании навыков",
+  "analytics_velocity": "Скорость",
+  "analytics_overview": "Обзор",
+  "analytics_by_size": "По размеру",
+  "analytics_turn_cycle_p50": "Цикл запроса (p50)",
+  "analytics_turn_cycle_p90": "Цикл запроса (p90)",
+  "analytics_first_response_p50": "Первый ответ (p50)",
+  "analytics_first_response_p90": "Первый ответ (p90)",
+  "analytics_msgs_per_active_min": "Сообщений / мин активности",
+  "analytics_chars_per_active_min": "Символов / мин активности",
+  "analytics_tools_per_active_min": "Вызовов / мин активности",
+  "analytics_group": "Группа",
+  "analytics_cycle_p90": "Цикл p90",
+  "analytics_no_breakdown_data": "Нет подробных данных",
+  "status_dot_working": "Working — last write within the last minute",
+  "status_dot_waiting": "Waiting on user input",
+  "status_dot_idle": "Recently active, currently idle",
+  "status_dot_stale": "Flagged session, idle for 10–60 minutes",
+  "status_dot_unclean": "Terminated mid tool call (or file truncated)",
+  "call_row_toggle_subagent_calls": "Toggle sub-agent calls",
+  "call_row_running_duration": "running {duration}+",
+  "call_group_parallel_label": "parallel",
+  "call_group_parallel_call_count": [
+    {
+      "declarations": ["input count", "input countLabel", "local countPlural = count: plural"],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "{countLabel} call",
+        "countPlural=other": "{countLabel} calls"
+      }
+    }
+  ],
+  "subagent_calls_label": "↳ sub-agent",
+  "subagent_calls_summary": [
+    {
+      "declarations": [
+        "input count",
+        "input countLabel",
+        "input duration",
+        "input running",
+        "local countPlural = count: plural"
+      ],
+      "selectors": ["countPlural", "running"],
+      "match": {
+        "countPlural=one,running=true": "{countLabel} call · running {duration}+",
+        "countPlural=other,running=true": "{countLabel} calls · running {duration}+",
+        "countPlural=one,running=false": "{countLabel} call · {duration}",
+        "countPlural=other,running=false": "{countLabel} calls · {duration}"
+      }
+    }
+  ],
+  "activity_lane_activity": "activity",
+  "activity_lane_message_count": [
+    {
+      "declarations": ["input count", "input countLabel", "local countPlural = count: plural"],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "{countLabel} message",
+        "countPlural=other": "{countLabel} messages"
+      }
+    }
+  ],
+  "session_recall_title": "Поиск в истории",
+  "session_recall_loading": "Loading distilled recall…",
+  "session_recall_empty": "No distilled recall for this session.",
+  "session_recall_error": "Could not load distilled recall.",
+  "session_recall_generation": "Generation",
+  "session_recall_review_state": "Review state",
+  "session_recall_provenance_revoked": "Provenance revoked",
+  "session_recall_evidence_range": "Messages {start}–{end}",
+  "session_recall_jump_evidence": "Jump to transcript messages {start}–{end}",
+  "recall_page_title": "Поиск в истории",
+  "recall_page_workspace_subtitle": "Browse durable knowledge and generated reports.",
+  "recall_page_tabs_label": "Recall workspace",
+  "recall_page_tab_corpus": "Corpus",
+  "recall_page_tab_generated": "Generated insights",
+  "recall_generated_subtitle": "Generate reports from an explicit session scope or browse saved reports.",
+  "recall_generated_date_range": "Date range",
+  "recall_generated_project": "Проект",
+  "recall_generated_session_agent": "Session agent",
+  "recall_generated_select_session_agent": "Filter report sessions by agent",
+  "recall_generated_archive_label": "Saved generated insights",
+  "recall_generated_export": "Export",
+  "recall_generated_publish": "Publish",
+  "recall_generated_publish_secret": "Secret",
+  "recall_page_subtitle": "Browse distilled entries and extraction coverage.",
+  "recall_page_search_placeholder": "Search Recall entries…",
+  "recall_page_clear_search": "Clear Recall search",
+  "recall_page_type_filter": "Entry type",
+  "recall_page_all_types": "All types",
+  "recall_page_generation_filter": "Extraction generation",
+  "recall_page_all_generations": "All generations",
+  "recall_page_review_filter": "Review state",
+  "recall_page_all_review_states": "All review states",
+  "recall_page_review_state_human_reviewed": "Human approved",
+  "recall_page_review_state_human_rejected": "Human rejected",
+  "recall_page_review_state_unreviewed_auto": "Unreviewed automatic",
+  "recall_page_review_state_calibrated_auto": "Calibrated automatic",
+  "recall_page_review_state_eval_raw": "Evaluation raw",
+  "recall_page_review_approve": "Approve",
+  "recall_page_review_archive": "Archive",
+  "recall_page_review_approve_disabled": "Approval is unavailable because the source evidence was revoked.",
+  "recall_page_review_archive_title": "Archive Recall entry",
+  "recall_page_review_archive_message": "Archive “{title}” as rejected? It will remain outside the served Recall corpus.",
+  "recall_page_review_cancel": "Cancel",
+  "recall_page_review_close": "Close archive confirmation",
+  "recall_page_review_error": "Could not review this Recall entry: {error}",
+  "recall_page_table_label": "Recall entries",
+  "recall_page_fact_column": "Fact",
+  "recall_page_project_column": "Проект",
+  "recall_page_expand_entry": "Expand {title}",
+  "recall_page_collapse_entry": "Collapse {title}",
+  "recall_page_trigger_label": "Trigger",
+  "recall_page_uncertainty_label": "Uncertainty",
+  "recall_page_loading": "Loading Recall entries…",
+  "recall_page_empty": "No Recall entries match these filters.",
+  "recall_page_error": "Could not load Recall entries.",
+  "recall_page_load_more": "Load more",
+  "recall_page_loading_more": "Loading more…",
+  "recall_page_ranked_result_cap": "Ranked search is limited to the first {countLabel} matches.",
+  "recall_page_entries_shown": "Entries shown: {countLabel}",
+  "recall_page_extraction_title": "Состояние извлечения",
+  "recall_page_extraction_unconfigured": "Recall extraction is not configured.",
+  "recall_page_extraction_error": "Could not load extraction status.",
+  "recall_page_status_done": "{countLabel} done",
+  "recall_page_status_failed": "{countLabel} failed",
+  "recall_page_status_eligible": "{countLabel} eligible",
+  "recall_page_status_pending": "{countLabel} pending",
+  "recall_page_status_partial": "{countLabel} partial",
+  "recall_page_status_units": "Units {doneLabel}/{totalLabel}",
+  "recall_page_status_entries": "{countLabel} entries",
+  "recall_page_progress_show": "Show progress",
+  "recall_page_progress_hide": "Hide progress",
+  "recall_page_progress_filter_label": "Extraction progress state",
+  "recall_page_progress_all": "Все",
+  "recall_page_progress_pending": "Pending",
+  "recall_page_progress_partial": "Partial",
+  "recall_page_progress_failed": "Failed",
+  "recall_page_progress_table_label": "Extraction sessions",
+  "recall_page_progress_session_column": "Session",
+  "recall_page_progress_state_column": "State",
+  "recall_page_progress_units_column": "Units",
+  "recall_page_progress_updated_column": "Updated",
+  "recall_page_progress_empty": "No pending, partial, or failed extraction sessions.",
+  "recall_page_progress_error": "Could not load extraction progress.",
+  "recall_page_progress_retry_ready": "Retry ready",
+  "recall_page_progress_retry_after": "Retry after {date}",
+  "recall_page_progress_load_more": "Load more progress",
+  "recall_page_progress_loading_more": "Loading more progress…",
+  "recall_page_generations_title": "Extraction generations",
+  "recall_page_generation_activate": "Activate",
+  "recall_page_generation_retire": "Retire",
+  "recall_page_generation_activate_title": "Activate generation",
+  "recall_page_generation_retire_title": "Retire generation",
+  "recall_page_generation_cancel": "Cancel",
+  "recall_page_generation_close": "Close generation confirmation",
+  "recall_page_generation_activate_message": "Activate {model} ({fingerprint})? Its automatic entries will replace the currently served machine-distilled corpus.",
+  "recall_page_generation_retire_message": "Retire {model} ({fingerprint})? Its automatic entries will remain archived.",
+  "recall_page_generation_action_error": "Could not update the extraction generation: {error}",
+  "session_vitals_title": "Analysis",
+  "session_vitals_close": "Close session analysis",
+  "session_vitals_resize": "Resize session analysis panel",
+  "session_vitals_session": "Session",
+  "session_vitals_repository": "Repository",
+  "session_vitals_worktree": "Worktree",
+  "session_vitals_copy_repository": "Copy repository",
+  "session_vitals_repository_copied": "Repository copied",
+  "session_vitals_copy_worktree": "Copy worktree",
+  "session_vitals_worktree_copied": "Worktree copied",
+  "session_vitals_pull_requests": "Pull requests",
+  "session_vitals_open_pull_request": "Open {pr} in a new tab",
+  "session_vitals_labels": "Labels",
+  "session_vitals_filter_by_label": "Show sessions labeled {label}",
+  "session_vitals_running": "running",
+  "session_vitals_running_duration": "running {duration}+",
+  "session_vitals_tool_calls": "tool calls",
+  "session_vitals_tool_time": "tool time",
+  "session_vitals_slowest_call": "slowest call",
+  "session_vitals_jump_to_call": "Jump to call",
+  "session_vitals_turns": "turns",
+  "session_vitals_subagents": "sub-agents",
+  "session_vitals_activity": "Turn activity",
+  "session_vitals_activity_tool": "Tool execution",
+  "session_vitals_activity_unattributed": "Unattributed",
+  "session_vitals_activity_turn": "Turn {ordinal} · {duration}",
+  "session_vitals_not_measured": "Not measured",
+  "session_vitals_activity_hint": "Time without measured phase boundaries is unattributed.",
+  "session_vitals_time_spent": "Time spent",
+  "session_vitals_clear_category_filter": "clear category filter",
+  "session_vitals_completed_turns_hint": "measured tool time · click to highlight",
+  "session_vitals_timeline": "Timeline",
+  "session_vitals_click_marks_to_scroll": "click marks to scroll",
+  "session_vitals_jump_to_turn": "Jump to {category} turn at {time}",
+  "session_vitals_calls": "Calls",
+  "session_vitals_calls_summary": [
+    {
+      "declarations": [
+        "input count",
+        "input countLabel",
+        "input runningCount",
+        "local countPlural = count: plural",
+        "local runningPlural = runningCount: plural"
+      ],
+      "selectors": ["countPlural", "runningPlural"],
+      "match": {
+        "countPlural=one,runningPlural=one": "{countLabel} call · {runningCount} running",
+        "countPlural=other,runningPlural=one": "{countLabel} calls · {runningCount} running",
+        "countPlural=one,runningPlural=other": "{countLabel} call",
+        "countPlural=other,runningPlural=other": "{countLabel} calls"
+      }
+    }
+  ],
+  "session_vitals_now": "now",
+  "code_block_copy": "Copy code block",
+  "code_block_copy_title": "Copy code",
+  "common_copied": "Скопировано!",
+  "compact_boundary_show_full": "Show full summary",
+  "find_bar_no_results": "No results",
+  "find_bar_match_counter": "{current} of {total}",
+  "find_bar_find_in_session": "Find in session",
+  "find_bar_placeholder": "Find in session…",
+  "find_bar_search_query": "Search query",
+  "find_bar_prev_title": "Previous match (⇧ ↩)",
+  "find_bar_prev": "Previous match",
+  "find_bar_next_title": "Next match (↩)",
+  "find_bar_next": "Next match",
+  "find_bar_close_title": "Close (⎋)",
+  "find_bar_close": "Close find bar",
+  "signal_panel_not_enough_activity": "Not enough activity to analyze this session.",
+  "signal_panel_health_grade": "Health grade {grade}",
+  "signal_panel_outcome_confidence": "{outcome} ({confidence} confidence)",
+  "signal_panel_based_on": "Based on:",
+  "signal_panel_basis_title": "{factor} factored into the score",
+  "signal_panel_compaction_interrupted": "{mid} of {total} interrupted active work",
+  "signal_panel_compaction_title": "Context compactions in this session",
+  "signal_panel_compaction_count": "{count} compactions",
+  "signal_panel_mid_task": "В ходе задачи: {count}",
+  "signal_panel_no_penalties": "No penalties",
+  "signal_panel_penalties": "Penalties:",
+  "signal_panel_penalty_title": "{label} subtracted {value} from the score",
+  "subagent_inline_subagent_session": "Subagent session",
+  "thinking_block_thinking": "Thinking",
+  "perf_aria_label": "Performance debug",
+  "perf_title": "Performance",
+  "perf_samples": "{count} samples",
+  "perf_clear": "Clear",
+  "perf_close": "Close",
+  "perf_close_aria": "Close performance debug",
+  "perf_col_time": "Time",
+  "perf_col_route": "Route",
+  "perf_col_name": "Name",
+  "perf_col_duration": "Длительность",
+  "perf_col_status": "Status",
+  "import_failed": "Import failed",
+  "import_title": "Import Conversations",
+  "import_close": "Close import dialog",
+  "import_close_aria": "Close",
+  "import_processed": "{count} conversations processed",
+  "import_new": "new",
+  "import_updated": "updated",
+  "import_unchanged": "unchanged",
+  "import_errors": "errors",
+  "import_import_more": "Import more",
+  "import_done": "Done",
+  "import_hint_claude": "Upload {json} or the {zip} from a Claude.ai data export.",
+  "import_hint_chatgpt": "Upload the {zip} from a ChatGPT data export.",
+  "import_rebuilding_index": "Rebuilding search index...",
+  "import_processing_progress": "{count} conversations processed...",
+  "import_importing": "Importing conversations...",
+  "import_remove_file": "Remove file",
+  "import_drop_here": "Drop your file here",
+  "import_or_browse": "or click to browse",
+  "import_cancel": "Cancel",
+  "import_import": "Импорт",
+  "insights_page_all_agents": "All Agents",
+  "insights_page_template_prompt_maturity": "Prompt Maturity",
+  "insights_page_template_context_setup": "Context Setup",
+  "insights_page_template_workflow_hygiene": "Workflow Hygiene",
+  "insights_page_template_tool_reliability": "Tool Reliability",
+  "insights_page_template_model_cost": "Model and Cost",
+  "insights_page_template_instruction_opportunities": "Instruction Opportunities",
+  "insights_page_template_friction_review": "Friction Review",
+  "friction_review_summary_title": "Model-written summary",
+  "friction_review_summary_notice": "Written by a model from this digest's summary, pattern titles, and grouped diagnostic sources and messages. It does not change findings, digests, or issues.",
+  "friction_review_summary_empty": "No summary for this digest yet.",
+  "friction_review_summary_generate": "Generate summary",
+  "friction_review_summary_regenerate": "Regenerate",
+  "friction_review_summary_generating": "Generating: {phase}",
+  "friction_review_summary_unavailable": "Summary generation is not available for this archive.",
+  "insights_page_scope_no_automated": "No automated",
+  "insights_page_scope_both": "Both",
+  "insights_page_scope_only_automated": "Только автоматические",
+  "insights_page_could_not_load_examples": "Не удалось загрузить примеры",
+  "insights_page_date_range": "{from} to {to}",
+  "insights_page_severity_critical": "Critical",
+  "insights_page_severity_warning": "Warning",
+  "insights_page_severity_watch": "Watch",
+  "insights_page_severity_clear": "Clear",
+  "insights_page_severity_unavailable": "Нет данных",
+  "insights_page_no_computed_sessions": "No computed sessions",
+  "insights_page_affected_sessions": "{affected} of {total} sessions",
+  "insights_page_calibration_outcome_cohort": "Outcome cohort",
+  "insights_page_calibration_examples_only": "Examples only",
+  "insights_page_calibration_no_affected": "No affected sessions",
+  "insights_page_calibration_incomplete_rate": "{rate}% incomplete",
+  "insights_page_calibration_incomplete_lift": "{lift}x incomplete",
+  "insights_page_signal_examples": "Signal examples",
+  "insights_page_grade_badge": "Оценка {grade}",
+  "insights_page_unscored": "Unscored",
+  "insights_page_generated_recommendation": "Generated Recommendation",
+  "insights_page_agent_analysis": "Анализ агента",
+  "insights_page_activity": "Активность",
+  "insights_page_cache_hit": "cache hit",
+  "insights_page_fresh": "fresh",
+  "insights_page_filter_agents": "Filter agents...",
+  "insights_page_filter_by_agent": "Filter insights by agent",
+  "insights_page_no_matching_agents": "No matching agents",
+  "insights_page_session_scope": "Session scope",
+  "insights_page_filter_scopes": "Filter scopes...",
+  "insights_page_filter_by_scope": "Filter insights by session scope",
+  "insights_page_no_matching_scopes": "No matching scopes",
+  "insights_page_rule_based": "Rule-based",
+  "insights_page_next_actions": "Next actions",
+  "insights_page_deterministic_recommendations": "Deterministic Recommendations",
+  "insights_page_no_rule_actions": "No rule-based actions are firing.",
+  "insights_page_patterns_clear": "Patterns are clear or unavailable for the current filters.",
+  "insights_page_scored_facts": "Scored facts",
+  "insights_page_quality_patterns": "Quality Patterns",
+  "insights_page_deterministic_counts": "Deterministic counts from persisted session signals for {range}.",
+  "quality_page_refresh": "Refresh quality",
+  "quality_page_help_intro": "Quality signals and recommendations are computed directly from session data.",
+  "quality_page_help_docs": "Read Quality docs",
+  "insights_page_could_not_load": "Could not load deterministic insights.",
+  "insights_page_retry": "Повторить",
+  "insights_page_no_scored_data": "No scored quality data for this range.",
+  "insights_page_no_scored_data_hint": "Sync or backfill sessions with Phase 3 quality signals to populate prompt, context, workflow, and tool patterns.",
+  "insights_page_cached_warning": "Showing cached deterministic data. Latest refresh failed: {error}",
+  "insights_page_average_score": "Average score",
+  "insights_page_no_scored_sessions": "No scored sessions",
+  "insights_page_scored_sessions": "Scored sessions",
+  "insights_page_unscored_count": "Без оценки: {count}",
+  "insights_page_low_quality": "Low quality",
+  "insights_page_df_graded": "D/F graded sessions",
+  "insights_page_prompt_signals": "Prompt signals",
+  "insights_page_sessions_computed": "sessions computed",
+  "insights_page_score_distribution": "Score distribution",
+  "insights_page_pct_affected": "{pct}% affected",
+  "insights_pattern_recommendation_rationale": [
+    {
+      "declarations": ["input affected", "input total", "local totalPlural = total: plural"],
+      "selectors": ["totalPlural"],
+      "match": {
+        "totalPlural=one": "{affected} of {total} session has this deterministic pattern.",
+        "totalPlural=other": "{affected} of {total} sessions have this deterministic pattern."
+      }
+    }
+  ],
+  "insights_pattern_recommendation_fallback": "This recommendation is derived from fixed deterministic mappings.",
+  "insights_pattern_prompt_title": "Prompt maturity",
+  "insights_pattern_prompt_summary": "Task framing and acceptance evidence. Short prompts are context only.",
+  "insights_pattern_short_task_starts": "Short task starts",
+  "insights_pattern_unstructured_starts": "Unstructured starts",
+  "insights_pattern_missing_success_criteria": "Missing success criteria",
+  "insights_pattern_missing_verification_path": "Missing targeted verification path",
+  "insights_pattern_repeated_prompts": "Repeated prompts",
+  "insights_pattern_no_phase3": "No Phase 3 prompt-quality computations are available for this range.",
+  "insights_pattern_prompt_severity_description": "{severityDescription} Weak prompt-only markers do not set severity by themselves.",
+  "insights_pattern_score_pressure_proxy": "Score-pressure proxy",
+  "insights_pattern_comparison_groups": "Comparison groups",
+  "insights_pattern_prompt_action": "Open the linked examples before changing prompts; tune only signals with poor outcome lift.",
+  "insights_pattern_context_title": "Context health",
+  "insights_pattern_context_summary": "Code-context gaps, compactions, mid-task context loss, and high context pressure.",
+  "insights_pattern_sessions_with_compaction": "Sessions with compaction",
+  "insights_pattern_mid_task_compactions": "Mid-task compactions",
+  "insights_pattern_high_context_pressure": "High context pressure",
+  "insights_pattern_missing_code_context": "Missing code context",
+  "insights_pattern_context_action": "Split or summarize work before context pressure and mid-task compactions accumulate.",
+  "insights_pattern_workflow_title": "Workflow hygiene",
+  "insights_pattern_workflow_summary": "Errored, abandoned, frustrated, and repeated failing tool-cycle sessions.",
+  "insights_pattern_repeated_failing_tool_cycles": "Repeated failing tool cycles",
+  "insights_pattern_frustration_markers": "Frustration markers",
+  "insights_pattern_errored_outcomes": "Errored outcomes",
+  "insights_pattern_abandoned_outcomes": "Abandoned outcomes",
+  "insights_pattern_completed_outcomes": "Completed outcomes",
+  "insights_pattern_errored_or_abandoned_sessions": "errored or abandoned sessions",
+  "insights_pattern_interrupted_sessions": "Interrupted sessions",
+  "insights_pattern_workflow_action": "Review errored and abandoned workflows before tuning less severe prompt signals.",
+  "insights_pattern_tool_title": "Tool reliability",
+  "insights_pattern_tool_summary": "Tool failures, retries, and edit churn counted directly from session tool events.",
+  "insights_pattern_failure_signals": "Failure signals",
+  "insights_pattern_retries": "Retries",
+  "insights_pattern_edit_churn": "Edit churn",
+  "insights_pattern_average_failure_signals": "Average failure signals",
+  "insights_pattern_tool_action": "Inspect sessions with repeated failures or retries and fix brittle tool-use paths.",
+  "insights_pattern_no_computed": "No computed sessions for this pattern.",
+  "insights_pattern_none_fire": "No sessions currently fire this pattern.",
+  "insights_pattern_critical_description": "Critical means at least 35% of computed sessions fire the pattern.",
+  "insights_pattern_warning_description": "Warning means at least 18% of computed sessions fire the pattern.",
+  "insights_pattern_watch_description": "Watch means the pattern is present but below the warning threshold.",
+  "insights_pattern_points_below_average": "points below 100 average score",
+  "insights_pattern_unassigned_project": "Без проекта",
+  "insights_pattern_example_detail": [
+    {
+      "declarations": [
+        "input count",
+        "input completedRate",
+        "input failureSignals",
+        "local countPlural = count: plural"
+      ],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "{count} session, {completedRate}% completed, {failureSignals} avg failures",
+        "countPlural=other": "{count} sessions, {completedRate}% completed, {failureSignals} avg failures"
+      }
+    }
+  ],
+  "insights_page_driver_sessions": [
+    {
+      "declarations": ["input count", "input countLabel", "local countPlural = count: plural"],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "{countLabel} session",
+        "countPlural=other": "{countLabel} sessions"
+      }
+    }
+  ],
+  "insights_page_session_evidence": "Session evidence",
+  "insights_page_close": "Close",
+  "insights_page_loading_examples": "Загрузка примеров…",
+  "insights_page_no_triggering_sessions": "No sessions currently trigger this signal in the selected filters.",
+  "insights_page_unassigned_project": "Без проекта",
+  "insights_page_no_excerpt": "No prompt excerpt available",
+  "insights_page_unknown": "неизвестно",
+  "insights_page_failures": "{count} failures",
+  "insights_page_generated": "Generated",
+  "insights_page_separate_from_facts": "Separate from scored facts",
+  "insights_page_template_label": "Template",
+  "insights_page_filter_templates": "Filter templates...",
+  "insights_page_select_template": "Select template",
+  "insights_page_no_matching_templates": "No matching templates",
+  "insights_page_generator_label": "Generator",
+  "insights_page_filter_generators": "Filter generators...",
+  "insights_page_select_generator": "Select generator",
+  "insights_page_no_matching_generators": "No matching generators",
+  "insights_page_optional_focus": "Optional focus",
+  "insights_page_focus_placeholder": "Narrow the recommendation without changing scored facts",
+  "insights_page_generate_disabled": "Insight generation is unavailable for this archive",
+  "insights_page_generate_title": "Generate quality recommendation",
+  "insights_page_generate": "Generate",
+  "insights_page_loading_archive": "Loading archive...",
+  "insights_page_no_generated_saved": "No generated insights saved.",
+  "insights_page_no_generated_hint": "The deterministic dashboard above works without LLM configuration. Generated insight creation is reserved for the generated-insights phase.",
+  "insights_page_error": "Error",
+  "insights_page_running": "Running",
+  "insights_page_global": "global",
+  "insights_page_generation_error": "Generation error",
+  "insights_page_generating": "Generating",
+  "insights_page_dismiss_failed": "Dismiss failed generation",
+  "insights_page_template_version": "template {version}",
+  "insights_page_aggregate_hash": "aggregate {hash}",
+  "insights_page_copy_link": "Copy generated insight link",
+  "insights_page_copied_link": "Copied generated insight link",
+  "insights_page_copy_link_title": "Copy link to generated insight",
+  "insights_page_copied_link_short": "Copied link",
+  "insights_page_delete_insight": "Delete generated insight",
+  "insights_page_select_to_read": "Select a generated insight to read it.",
+  "breadcrumb_feedback_resumed_in": "Resumed in {terminal}",
+  "breadcrumb_feedback_command_copied": "Command copied!",
+  "breadcrumb_feedback_failed": "Failed",
+  "breadcrumb_feedback_not_supported": "Not supported",
+  "breadcrumb_feedback_no_path": "No path available",
+  "breadcrumb_feedback_path_copied": "Path copied!",
+  "breadcrumb_feedback_opened_in": "Opened in {name}",
+  "breadcrumb_feedback_failed_to_open": "Failed to open",
+  "breadcrumb_back_to_sessions": "Back to sessions",
+  "breadcrumb_sessions": "Сессии",
+  "breadcrumb_session_health": "Session health",
+  "breadcrumb_resume_in_terminal": "Resume session in terminal",
+  "breadcrumb_session_actions": "Session actions",
+  "breadcrumb_resume_session": "Resume session",
+  "breadcrumb_resume": "Resume",
+  "breadcrumb_open": "Open",
+  "breadcrumb_default_terminal": "Default terminal",
+  "breadcrumb_copy_command": "Copy command",
+  "breadcrumb_copy_directory_path": "Copy directory path",
+  "breadcrumb_open_in": "Open in",
+  "breadcrumb_copy_session_id_value": "Copy session ID: {id}",
+  "breadcrumb_copy_session_id": "Copy session ID",
+  "breadcrumb_copied": "Скопировано!",
+  "breadcrumb_estimated_cost": "Estimated session cost",
+  "breadcrumb_copy_link": "Copy link to session",
+  "breadcrumb_hide_analysis": "Hide session analysis",
+  "breadcrumb_show_analysis": "Show session analysis",
+  "breadcrumb_find_in_session_title": "Find in session (/)",
+  "breadcrumb_find_in_session": "Find in session",
+  "breadcrumb_rename": "Rename",
+  "breadcrumb_delete": "Delete",
+  "about_close": "Close about dialog",
+  "about_author": "Author",
+  "about_version": "Version",
+  "about_commit": "Commit",
+  "about_build_date": "Build date",
+  "about_footer": "Local viewer for AI agent sessions",
+  "confirm_delete_this_session": "this session",
+  "confirm_delete_title": "Delete Session",
+  "confirm_delete_close": "Close delete confirmation",
+  "confirm_delete_message": "Move {name} to trash?",
+  "confirm_delete_hint": "You can restore it later from the Trash page.",
+  "confirm_delete_cancel": "Cancel",
+  "confirm_delete_deleting": "Deleting...",
+  "confirm_delete_move_to_trash": "Move to Trash",
+  "publish_title_secret": "Publish to secret GitHub Gist",
+  "publish_title_public": "Publish to public GitHub Gist",
+  "publish_close": "Close publish dialog",
+  "publish_setup_text": "Enter a GitHub personal access token with the {scope} scope.",
+  "publish_create_token": "Create token on GitHub",
+  "publish_save_and_publish": "Save & Publish",
+  "publish_creating_secret": "Creating secret GitHub Gist...",
+  "publish_creating_public": "Creating public GitHub Gist...",
+  "publish_view_url": "View URL",
+  "publish_copy": "Copy",
+  "publish_gist_url": "Gist URL",
+  "publish_open_in_browser": "Open in Browser",
+  "publish_close_btn": "Close",
+  "publish_retry": "Повторить",
+  "publish_save_token_failed": "Failed to save token",
+  "publish_no_session_selected": "No session selected",
+  "publish_failed": "Publish failed",
+  "resync_title": "Полная синхронизация",
+  "resync_close": "Close resync dialog",
+  "resync_confirm_text": "Re-parse all session files from scratch. Existing sessions will be updated in place — no data is deleted. Use this after upgrading or when sessions appear incorrect.",
+  "resync_cancel": "Cancel",
+  "resync_start": "Start Full Resync",
+  "resync_syncing_progress": "Syncing {done} / {total} sessions...",
+  "resync_preparing": "Preparing...",
+  "resync_sessions_synced": "Sessions synced: {count}",
+  "resync_failed": "Failed: {count}",
+  "resync_close_btn": "Close",
+  "resync_retry": "Повторить",
+  "resync_error_read_only": "Full resync is unavailable for read-only backends.",
+  "resync_error_in_progress": "A sync is already in progress.",
+  "shortcuts_open_command_palette": "Open command palette",
+  "shortcuts_find_in_session": "Find in session",
+  "shortcuts_close_palette": "Close palette / modal / find",
+  "shortcuts_next_message": "Next message",
+  "shortcuts_prev_message": "Previous message",
+  "shortcuts_next_user_prompt": "Next user prompt",
+  "shortcuts_prev_user_prompt": "Previous user prompt",
+  "shortcuts_next_session": "Next session",
+  "shortcuts_prev_session": "Previous session",
+  "shortcuts_toggle_sort": "Toggle sort order",
+  "shortcuts_cycle_layout": "Сменить компоновку сообщений",
+  "shortcuts_trigger_sync": "Trigger sync",
+  "shortcuts_star_session": "Star / unstar session",
+  "shortcuts_export_session": "Экспортировать сессию",
+  "shortcuts_publish_gist": "Опубликовать в Gist",
+  "shortcuts_copy_resume": "Copy resume command",
+  "shortcuts_delete_session": "Delete session",
+  "shortcuts_show_modal": "Show this modal",
+  "shortcuts_zoom_in": "Zoom in",
+  "shortcuts_zoom_out": "Zoom out",
+  "shortcuts_reset_zoom": "Reset zoom",
+  "shortcuts_title": "Keyboard Shortcuts",
+  "shortcuts_close": "Close shortcuts",
+  "update_title": "Software Update",
+  "update_close": "Close update dialog",
+  "update_available": "Доступна новая версия: {version}",
+  "update_current": "You are running {version}.",
+  "update_instructions": "Run {cmd} on the command line to install.",
+  "update_latest": "You're running the latest version ({version}).",
+  "update_close_btn": "Close",
+  "pinned_title": "Pinned Messages",
+  "pinned_loading": "Loading pins...",
+  "pinned_none_for_project": "No pinned messages for this project",
+  "pinned_none_for_project_hint": "Try selecting a different project or clear the project filter.",
+  "pinned_none": "No pinned messages",
+  "pinned_none_hint": "Pin messages from any session by clicking the pin icon in the message header.",
+  "pinned_go_to_message": "Go to message",
+  "pinned_collapse": "Collapse",
+  "pinned_expand": "Expand",
+  "pinned_copy_message": "Copy message",
+  "pinned_copied_message": "Copied message",
+  "pinned_unresolved": "Pinned message is no longer in this transcript.",
+  "pinned_unpin": "Unpin",
+  "settings_session_providers_title": "Источники сессий",
+  "settings_session_providers_description": "Выберите папки агентов, которые AgentsView будет находить и синхронизировать.",
+  "settings_session_providers_not_configured": "Папки не настроены",
+  "settings_session_providers_enable_aria": "Включить синхронизацию сессий {provider}",
+  "settings_session_providers_enabled": "Включён",
+  "settings_session_providers_disabled": "Выключен",
+  "settings_session_providers_applied_notice": "Изменения применены. Перезапустите отдельный процесс отслеживания для отправки push-обновлений, чтобы применить их и там.",
+  "settings_session_providers_save_failed": "Не удалось обновить источники сессий. Прежний выбор сохранён.",
+  "settings_session_providers_homes_title": "Дополнительные папки",
+  "settings_session_providers_homes_hint": "Добавьте домашнюю папку агента, например {envVar}. AgentsView автоматически найдёт в ней папки сессий.",
+  "settings_session_providers_homes_placeholder": "~/.{agent}-work",
+  "settings_session_providers_homes_add": "Добавить папку",
+  "settings_session_providers_homes_input_aria": "Новая домашняя папка {provider}",
+  "settings_session_providers_homes_remove_aria": "Удалить папку {home} для {provider}",
+  "appearance_layout_default": "По умолчанию",
+  "appearance_layout_compact": "Компактный",
+  "appearance_layout_stream": "Поток",
+  "appearance_layout_skim": "Краткий обзор",
+  "header_block_filter_user": "Сообщения пользователя",
+  "header_block_filter_assistant": "Ответы ассистента",
+  "header_block_filter_thinking": "Рассуждения",
+  "header_block_filter_tool": "Вызовы инструментов",
+  "header_block_filter_code": "Блоки кода",
+  "appearance_title": "Внешний вид",
+  "appearance_description": "Настройки темы, компоновки, цветов диаграмм и видимости блоков.",
+  "appearance_theme": "Тема",
+  "appearance_light": "Светлая",
+  "appearance_dark": "Тёмная",
+  "appearance_chart_palette": "Цвета диаграмм",
+  "appearance_chart_palette_agentsview": "AgentsView",
+  "appearance_chart_palette_matplotlib": "Matplotlib",
+  "appearance_chart_palette_colorblind": "Безопасная палитра",
+  "appearance_message_layout": "Компоновка сообщений",
+  "appearance_block_visibility": "Видимость блоков",
+  "settings_github_token_saved": "Токен GitHub сохранён.",
+  "settings_github_save_failed": "Не удалось сохранить токен",
+  "settings_github_title": "Интеграция с GitHub",
+  "settings_github_description": "Токен для публикации сессий в GitHub Gist.",
+  "settings_github_status": "Состояние",
+  "settings_github_configured": "Настроено",
+  "settings_github_not_configured": "Не настроено",
+  "settings_github_saving": "Сохранение…",
+  "settings_github_save_token": "Сохранить токен",
+  "settings_embeddings_title": "Эмбеддинги",
+  "settings_embeddings_description": "Состояние построения индекса семантического поиска по содержимому сессий.",
+  "settings_embeddings_loading": "Загрузка состояния эмбеддингов…",
+  "settings_embeddings_unavailable": "Семантический поиск не поддерживается этим сервером.",
+  "settings_embeddings_load_failed": "Не удалось загрузить состояние эмбеддингов",
+  "settings_embeddings_model_label": "Модель",
+  "settings_embeddings_dimension_label": "Размерность",
+  "settings_embeddings_scanning_hint": "Поиск изменений в сессиях — общий объём работы пока неизвестен.",
+  "settings_embeddings_rate": [
+    {
+      "declarations": ["input count", "input rateLabel", "local countPlural = count: plural"],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "{rateLabel} текстовый фрагмент/с",
+        "countPlural=few": "{rateLabel} текстовых фрагмента/с",
+        "countPlural=many": "{rateLabel} текстовых фрагментов/с",
+        "countPlural=other": "{rateLabel} текстовых фрагментов/с"
+      }
+    }
+  ],
+  "settings_embeddings_elapsed": "Прошло {duration}",
+  "settings_embeddings_duration_hours_minutes": "{hours} ч {minutes} мин",
+  "settings_embeddings_duration_minutes_seconds": "{minutes} мин {seconds} с",
+  "settings_embeddings_duration_seconds": "{seconds} с",
+  "settings_embeddings_last_build_label": "Последняя сборка",
+  "settings_embeddings_last_build_completed": "Завершена",
+  "settings_embeddings_last_build_activated": "новая версия активирована",
+  "settings_embeddings_last_build_documents": "Обработано документов",
+  "settings_embeddings_last_build_chunks": "Проиндексировано фрагментов текста",
+  "settings_embeddings_generations_title": "Версии индекса",
+  "settings_embeddings_generations_empty": "Индекс эмбеддингов ещё не создавался.",
+  "settings_embeddings_state_active": "Активна",
+  "settings_embeddings_state_building": "Создаётся",
+  "settings_embeddings_state_retired": "Удалена",
+  "settings_embeddings_coverage": "Добавлено в индекс: {embeddedLabel} · отсутствует: {missingLabel}",
+  "settings_remote_connected_version": "Подключено (v{version})",
+  "settings_remote_server_returned": "Сервер вернул ответ {status}",
+  "settings_remote_connection_failed": "Не удалось подключиться",
+  "settings_remote_connected_reloading": "Подключено. Перезагрузка…",
+  "settings_remote_disconnected_reloading": "Отключено. Перезагрузка…",
+  "settings_remote_title": "Удалённый доступ",
+  "settings_remote_description": "Подключитесь к удалённому серверу AgentsView или откройте доступ к этому экземпляру.",
+  "settings_remote_require_auth": "Требовать токен авторизации",
+  "settings_remote_enabled": "Включено",
+  "settings_remote_disabled": "Выключено",
+  "settings_remote_restart_note": "Для применения изменения авторизации перезапустите сервер.",
+  "settings_remote_security_warning": "Подключение использует незашифрованный HTTP. Защитите трафик безопасным туннелем (Tailscale или SSH) либо обратным прокси с TLS.",
+  "settings_remote_auth_token": "Токен авторизации",
+  "settings_remote_copied": "Скопировано",
+  "settings_remote_copy": "Скопировать",
+  "settings_remote_server": "Сервер",
+  "settings_remote_listening_all": "Сервер доступен через все сетевые интерфейсы (порт {port}). Подключитесь по IP-адресу или имени этого компьютера.",
+  "settings_remote_remote_connection": "Удалённое подключение",
+  "settings_remote_connect_to_remote": "Подключиться к удалённому серверу",
+  "settings_remote_connected_to": "Подключено к серверу",
+  "settings_remote_disconnect": "Отключиться",
+  "settings_remote_server_url": "Адрес сервера",
+  "settings_remote_paste_token_from_server": "Вставьте токен с сервера",
+  "settings_remote_testing": "Проверка…",
+  "settings_remote_test_connection": "Проверить подключение",
+  "settings_remote_connect": "Подключиться",
+  "settings_terminal_mode_auto": "Определять автоматически",
+  "settings_terminal_mode_custom": "Свой вариант",
+  "settings_terminal_mode_clipboard": "Только буфер обмена",
+  "settings_terminal_title": "Терминал",
+  "settings_terminal_description": "Настройте восстановление сессий в терминале.",
+  "settings_terminal_launch_mode": "Способ запуска",
+  "settings_terminal_terminal_binary": "Исполняемый файл терминала",
+  "settings_terminal_arguments": "Аргументы",
+  "settings_terminal_args_hint": "(используйте \\{cmd\\} как подстановку)",
+  "settings_terminal_saving": "Сохранение…",
+  "settings_terminal_save": "Сохранить",
+  "settings_worktree_moved": "Правила классификации проектов перенесены в раздел «Данные».",
+  "settings_worktree_moved_link": "Открыть «Данные» › «Правила»",
+  "worktree_failed_load": "Failed to load mappings",
+  "worktree_failed_save": "Failed to save mapping",
+  "worktree_failed_delete": "Failed to delete mapping",
+  "worktree_apply_result": "{updated} updated, {matched} matched",
+  "worktree_failed_apply": "Failed to apply mappings",
+  "worktree_title": "Worktree mappings",
+  "worktree_description": "Map worktree path prefixes to canonical projects for any synced machine.",
+  "worktree_layout": "Layout",
+  "worktree_layout_explicit": "Explicit",
+  "worktree_layout_repo_dot_worktrees": "{repo}.worktrees/{branch}",
+  "worktree_parent_directory": "Parent directory",
+  "worktree_parent_directory_hint": "Enter the directory that contains the repo.worktrees folders.",
+  "worktree_project_required": "Required for explicit mappings.",
+  "worktree_project_derived": "Derived from the repo.worktrees folder.",
+  "worktree_loading": "Loading mappings...",
+  "worktree_machine": "Компьютер",
+  "worktree_no_mappings": "No worktree mappings configured.",
+  "worktree_on": "On",
+  "worktree_off": "Off",
+  "worktree_edit": "Edit",
+  "worktree_delete": "Delete",
+  "worktree_path_prefix": "Path prefix",
+  "worktree_project": "Проект",
+  "worktree_enabled": "Enabled",
+  "worktree_saving": "Saving...",
+  "worktree_add_mapping": "Add mapping",
+  "worktree_save_mapping": "Save mapping",
+  "worktree_cancel": "Cancel",
+  "worktree_applying": "Applying...",
+  "worktree_apply_mappings": "Apply mappings",
+  "worktree_select_machine": "Select machine",
+  "worktree_no_machines": "No machines available.",
+  "worktree_delete_confirm_title": "Delete mapping?",
+  "worktree_disable_confirm_title": "Disable mapping?",
+  "worktree_delete_confirm_action": "Delete mapping",
+  "worktree_disable_confirm_action": "Disable mapping",
+  "worktree_confirmation_close": "Close mapping confirmation",
+  "worktree_change_warning": "Sessions already reclassified keep their current project initially, but sessions whose source files still exist can revert to parser-derived names on a later reparse or full resync. Orphaned sessions retain their stored classification.",
+  "system_boundary_continuation": "Session continuation",
+  "system_boundary_resume": "Session resume",
+  "system_boundary_interrupted": "Request interrupted",
+  "system_boundary_task_notification": "Task notification",
+  "system_boundary_stop_hook": "Stop hook feedback",
+  "system_boundary_hook_success": "Hook output",
+  "system_boundary_stop_hook_summary": "Stop hook summary",
+  "system_boundary_hook_cancelled": "Hook cancelled",
+  "system_boundary_peer_message": "Message from another session",
+  "system_boundary_title": "System boundary: {subtype}",
+  "system_boundary_show_content": "Show content",
+  "trash_loading": "Loading trash...",
+  "trash_empty": "Trash is empty",
+  "trash_empty_desc": "Deleted sessions will appear here.",
+  "trash_title": "Корзина",
+  "trash_emptying": "Emptying...",
+  "trash_empty_trash": "Empty Trash",
+  "trash_msgs": [
+    {
+      "declarations": ["input count", "input countLabel", "local countPlural = count: plural"],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "{countLabel} msg",
+        "countPlural=other": "{countLabel} msgs"
+      }
+    }
+  ],
+  "trash_deleted_ago": "deleted {time}",
+  "trash_restore_session": "Restore session",
+  "trash_restore": "Restore",
+  "trash_permanently_delete": "Permanently delete",
+  "trash_delete_forever": "Delete Forever",
+  "trends_term": "Term",
+  "trends_per1k_messages": "Per 1k messages",
+  "trends_count": "Count",
+  "trends_occurrences_per1k": "Occurrences / 1k messages",
+  "trends_no_occurrences_in_range": "No occurrences in this range",
+  "trends_occurrences": "Occurrences",
+  "trends_no_trend_data": "Нет данных о динамике",
+  "trends_chart_aria_normalized": "Term occurrence trends per 1,000 messages",
+  "trends_chart_aria": "Term occurrence trends",
+  "trends_title": "Тенденции",
+  "trends_date_range": "{from} to {to}",
+  "trends_reset": "Reset",
+  "trends_refreshing": "Refreshing",
+  "trends_refresh": "Обновить",
+  "trends_terms": "Terms",
+  "trends_one_per_line": "one per line",
+  "trends_group_by": "Group by",
+  "trends_normalize": "Normalize by number of messages",
+  "trends_computing": "Computing trends...",
+  "usage_cost_attribution": "Cost Attribution",
+  "usage_project": "Проект",
+  "usage_agent": "Агент",
+  "usage_treemap": "Treemap",
+  "usage_list": "List",
+  "usage_no_data_period": "Нет данных за этот период",
+  "usage_cache_efficiency": "Cache Efficiency",
+  "usage_cost_over_time": "Cost Over Time",
+  "filter_dropdown_all": "Все",
+  "filter_dropdown_selected": "{count} selected",
+  "filter_dropdown_none": "Нет",
+  "filter_dropdown_hidden": "{count} hidden",
+  "filter_dropdown_search": "Search...",
+  "filter_dropdown_select_all": "Select all",
+  "filter_dropdown_deselect_all": "Deselect all",
+  "filter_dropdown_all_items": "All {label}s",
+  "filter_dropdown_no_matches": "Совпадений нет",
+  "usage_retry": "Повторить",
+  "usage_no_sessions_range": "За этот период нет сессий",
+  "usage_refresh_data": "Refresh usage data",
+  "usage_vs_prior": "{pct}% vs prior",
+  "usage_total_cost": "Total Cost",
+  "usage_pairwise_title": "Comparative Cost Analysis",
+  "usage_pairwise_subtitle": "Compare two model or project slices using backend-computed session and token metrics.",
+  "usage_pairwise_tokens_title": "Comparative Token Analysis",
+  "usage_pairwise_tokens_subtitle": "Compare two model or project slices using backend-computed session and token metrics.",
+  "usage_pairwise_left": "Left side",
+  "usage_pairwise_right": "Right side",
+  "usage_pairwise_dimension": "Dimension",
+  "usage_pairwise_value": "Value",
+  "usage_pairwise_left_dimension": "Left comparison dimension",
+  "usage_pairwise_left_value": "Left comparison value",
+  "usage_pairwise_right_dimension": "Right comparison dimension",
+  "usage_pairwise_right_value": "Right comparison value",
+  "usage_pairwise_select_value": "Select a value",
+  "usage_pairwise_no_matching_dimensions": "No matching dimensions",
+  "usage_pairwise_no_matching_values": "No matching values",
+  "usage_pairwise_not_enough_data": "Need at least two model or project slices in this range to compare them.",
+  "usage_pairwise_metric": "Metric",
+  "usage_pairwise_delta": "Delta",
+  "usage_pairwise_side_heading": "{dimension}: {value}",
+  "usage_pairwise_cost_per_session": "Cost / Session",
+  "usage_pairwise_total_tokens": "Total Tokens",
+  "usage_pairwise_tokens_per_session": "Tokens / Session",
+  "usage_copilot_credits": "Copilot AI Credits",
+  "usage_cached_suffix": "+{tokens} cached",
+  "usage_output_tokens": "Выходные токены",
+  "usage_daily_burn": "Daily Burn",
+  "usage_avg_per_day": "avg/day",
+  "usage_peak_day": "Peak Day",
+  "usage_cache_hit": "Cache Hit",
+  "usage_projects": "Проекты",
+  "usage_active_days": "Дни активности",
+  "settings_remote_unknown": "неизвестно",
+  "breadcrumb_feedback_terminal": "terminal",
+  "update_unknown": "неизвестно",
+  "analytics_outcome_completed": "завершены",
+  "analytics_outcome_abandoned": "прерваны",
+  "analytics_outcome_errored": "с ошибками",
+  "analytics_outcome_unknown": "неизвестно",
+  "activity_overlay_placeholder": "Overlay metric",
+  "activity_no_metrics": "No metrics",
+  "activity_insight_no_matching_agents": "No matching agents",
+  "activity_filter_agents_placeholder": "Filter agents",
+  "activity_filter_machines_placeholder": "Filter machines",
+  "activity_filter_automation_placeholder": "Filter automation",
+  "activity_no_matching_agents": "No matching agents",
+  "activity_no_matching_machines": "No matching machines",
+  "activity_no_automation_filters": "No automation filters",
+  "activity_loading_report": "Loading activity report...",
+  "activity_report_progress": "Processing activity… {count} rows",
+  "activity_loading_sessions": "Loading sessions…",
+  "activity_loading_usage": "Loading usage…",
+  "activity_finalizing_report": "Finalizing report…",
+  "activity_sessions_load_failed": "Failed to load activity sessions",
+  "activity_report_load_failed": "Failed to load activity report",
+  "session_activity_load_failed": "Failed to load activity",
+  "appearance_high_contrast": "Высокая контрастность",
+  "appearance_on": "Вкл.",
+  "appearance_off": "Выкл.",
+  "appearance_zoom": "Масштаб",
+  "settings_archive_content_title": "Содержимое архива",
+  "settings_archive_content_description": "Какие данные сохранять из результатов работы инструментов.",
+  "settings_search_keywords_archive_content": "archive content images retention tool results placeholders storage size",
+  "settings_tool_result_images": "Изображения в результатах инструментов",
+  "settings_tool_result_images_keep": "Сохранять",
+  "settings_tool_result_images_drop": "Удалять",
+  "settings_tool_result_images_offload": "Выносить отдельно",
+  "settings_tool_result_images_hint": "Для уже сохранённых результатов действует выбранная ранее политика. Если изменить её обратно на «Сохранять», удалённые данные не восстановятся. Чтобы обновить существующие записи, запустите agentsview db migrate --images.",
+  "settings_tool_result_images_restart_notice": "Перезапустите сервер AgentsView, чтобы применить настройку к новым сессиям.",
+  "settings_tool_images_title": "Изображения в результатах инструментов",
+  "settings_tool_images_description": "Встроенные изображения, сохранённые в результатах инструментов.",
+  "settings_search_keywords_tool_images": "images tool results strip cleanup payloads bytes storage",
+  "settings_image_cleanup_intro": "Посмотрите, в каких сохранённых результатах инструментов ещё есть встроенные изображения, и замените их читаемыми заполнителями.",
+  "settings_image_cleanup_project_label": "Проект содержит",
+  "settings_image_cleanup_project_placeholder": "Все проекты",
+  "settings_image_cleanup_before_label": "Завершены до",
+  "settings_image_cleanup_before_placeholder": "ГГГГ-ММ-ДД",
+  "settings_image_cleanup_preview": "Просмотр",
+  "settings_image_cleanup_previewing": "Подготовка…",
+  "settings_image_cleanup_preview_failed": "Не удалось подготовить просмотр.",
+  "settings_image_cleanup_unavailable": "Удаление изображений доступно только для локального архива.",
+  "settings_image_cleanup_proxy_denied": "Чтобы удалить изображения, откройте AgentsView на этом компьютере напрямую, без прокси или переадресации порта.",
+  "settings_image_cleanup_read_only": "Архив доступен только для чтения, поэтому записи нельзя изменить.",
+  "settings_image_cleanup_empty": "В выбранных сессиях нет сохранённых результатов инструментов со встроенными изображениями.",
+  "settings_image_cleanup_sessions": [
+    {
+      "declarations": ["input count", "input countLabel", "local countPlural = count: plural"],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "Выбрана {countLabel} сессия",
+        "countPlural=few": "Выбраны {countLabel} сессии",
+        "countPlural=many": "Выбрано {countLabel} сессий",
+        "countPlural=other": "Выбрано {countLabel} сессий"
+      }
+    }
+  ],
+  "settings_image_cleanup_payloads": [
+    {
+      "declarations": ["input count", "input countLabel", "local countPlural = count: plural"],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "{countLabel} набор данных изображения",
+        "countPlural=few": "{countLabel} набора данных изображений",
+        "countPlural=many": "{countLabel} наборов данных изображений",
+        "countPlural=other": "{countLabel} наборов данных изображений"
+      }
+    }
+  ],
+  "settings_image_cleanup_by_project": "По проектам",
+  "settings_image_cleanup_column_project": "Проект",
+  "settings_image_cleanup_column_sessions": "Сессии",
+  "settings_image_cleanup_column_payloads": "Данные изображений",
+  "settings_image_cleanup_column_stored": "Размер сохранённых данных",
+  "settings_image_cleanup_column_decoded": "Размер после декодирования",
+  "settings_image_cleanup_apply": "Удалить данные изображений",
+  "settings_image_cleanup_applying": "Удаление…",
+  "settings_image_cleanup_apply_failed": "Не удалось завершить удаление. Некоторые сессии уже могли измениться. Повторите просмотр перед новой попыткой.",
+  "settings_image_cleanup_busy": "Сейчас выполняется другое обслуживание архива. Повторите попытку после его завершения.",
+  "settings_image_cleanup_confirm_title": "Удалить сохранённые изображения?",
+  "settings_image_cleanup_confirm_close": "Закрыть",
+  "settings_image_cleanup_confirm_scope": "Удаление охватывает все сессии, подходящие под эти фильтры на момент запуска. До начала операции могут добавиться новые сессии.",
+  "settings_image_cleanup_confirm_body": "Это изменит сохранённые результаты инструментов. Отменить действие нельзя. Исходные сессии агентов и отдельные файлы изображений не изменятся.",
+  "settings_image_cleanup_confirm_action": "Удалить",
+  "settings_image_cleanup_cancel": "Отмена",
+  "settings_image_cleanup_applied": "Изображения удалены.",
+  "settings_image_cleanup_changed": [
+    {
+      "declarations": ["input count", "input countLabel", "local countPlural = count: plural"],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "{countLabel} сессия изменена",
+        "countPlural=few": "{countLabel} сессии изменены",
+        "countPlural=many": "{countLabel} сессий изменено",
+        "countPlural=other": "{countLabel} сессий изменено"
+      }
+    }
+  ],
+  "settings_image_cleanup_compact_note": "После удаления данных размер файла архива не изменится. Чтобы уменьшить файл, запустите agentsview db compact.",
+  "appearance_render_unknown_xml_blocks": "Показывать неизвестные блоки XML в виде форматированного текста",
+  "go_to_session_title": "Go to session",
+  "go_to_session_input_label": "Session ID or UUID",
+  "go_to_session_placeholder": "Paste a session ID or UUID",
+  "go_to_session_submit": "Open session",
+  "go_to_session_close": "Close go to session",
+  "go_to_session_empty": "Enter a session ID or UUID.",
+  "go_to_session_invalid": "Enter a session ID or UUID.",
+  "go_to_session_not_found": "No session matches that ID or UUID.",
+  "go_to_session_ambiguous": "Multiple sessions match that ID or UUID. Open the desired session from an existing link.",
+  "go_to_session_capped": "Too many sessions match that ID or UUID. Open the desired session from an existing link.",
+  "go_to_session_failed": "Could not look up that session. Try again.",
+  "shortcuts_go_to_session": "Go to session when find is closed",
+  "analytics_outcome_title": "Результаты",
+  "analytics_outcome_repositories": "Репозитории",
+  "analytics_outcome_commits": "Коммиты",
+  "analytics_outcome_loc_added": "Добавлено строк",
+  "analytics_outcome_loc_removed": "Удалено строк",
+  "analytics_outcome_files_changed": "Изменено файлов",
+  "analytics_outcome_prs_opened": "Открыто pull request",
+  "analytics_outcome_prs_merged": "Принято pull request",
+  "analytics_outcome_include_prs": "Учитывать pull request",
+  "analytics_outcome_include_prs_hint": "Выполняет один запрос к GitHub для каждого репозитория. Это может занять несколько минут.",
+  "analytics_outcome_backend_unavailable": "Этот сервер не поддерживает сводку результатов.",
+  "analytics_outcome_configure_github": "Настройте GitHub в настройках, чтобы загрузить статистику pull request.",
+  "analytics_outcome_loading": "Чтение истории Git…",
+  "analytics_outcome_empty": "За этот период нет активности в Git.",
+  "analytics_outcome_filters_unsupported": "Чтобы посмотреть сводку результатов, сбросьте фильтры компьютера, модели, завершения, числа сообщений, недавней активности и времени суток.",
+  "analytics_outcome_partial": "Не учтено:",
+  "analytics_outcome_partial_entry": "{repo} ({op}): {reason}",
+  "session_breadcrumb_session_health_and_tool_sequences": "Session health and tool sequences",
+  "tool_sequences_title": "Observed tool sequences",
+  "tool_sequences_loading": "Loading tool sequences…",
+  "tool_sequences_error": "Couldn't load tool sequences.",
+  "tool_sequences_unavailable": "This archive doesn't record transcript versions, so tool sequences aren't available.",
+  "tool_sequences_none_recorded": "No tool calls recorded in this session.",
+  "tool_sequences_no_sequences": "No tool call returned an error or empty result.",
+  "tool_sequences_sequence_count": [
+    {
+      "declarations": ["input count", "input countLabel", "local countPlural = count: plural"],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "{countLabel} sequence",
+        "countPlural=other": "{countLabel} sequences"
+      }
+    }
+  ],
+  "tool_sequences_ending_recovered": "Recovered",
+  "tool_sequences_ending_abandoned": "Abandoned",
+  "tool_sequences_ending_open": "Open",
+  "tool_sequences_ending_unknown": "Unknown",
+  "tool_sequences_recovered_explanation": "A later call returned content.",
+  "tool_sequences_abandoned_explanation": "The session ended after an error or empty result.",
+  "tool_sequences_open_explanation": "The trace ends before the sequence is resolved.",
+  "tool_sequences_unknown_explanation": "The trace doesn't show how this sequence ended.",
+  "tool_sequences_outcome_errored": "Error",
+  "tool_sequences_outcome_empty": "Empty",
+  "tool_sequences_outcome_content": "Content",
+  "tool_sequences_outcome_unknown": "Unknown",
+  "tool_sequences_repeat_identical": "same input",
+  "tool_sequences_repeat_near_identical": "same input, reformatted",
+  "tool_sequences_tool_changed": "tool switched",
+  "tool_sequences_missing_identity": "No tool-use ID",
+  "tool_sequences_input": "Input",
+  "tool_sequences_no_input": "No input recorded.",
+  "tool_sequences_byte_count": [
+    {
+      "declarations": ["input count", "input countLabel", "local countPlural = count: plural"],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "{countLabel} byte",
+        "countPlural=other": "{countLabel} bytes"
+      }
+    }
+  ],
+  "tool_sequences_result": "Result",
+  "tool_sequences_result_unknown": "This result isn't text, so its outcome is unknown.",
+  "tool_sequences_result_unavailable": [
+    {
+      "declarations": ["input count", "input countLabel", "local countPlural = count: plural"],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "The retained {countLabel} byte of result text is unavailable here.",
+        "countPlural=other": "The retained {countLabel} bytes of result text are unavailable here."
+      }
+    }
+  ],
+  "tool_sequences_result_empty": "The tool returned nothing.",
+  "tool_sequences_result_size_unknown": "Result size unavailable.",
+  "tool_sequences_not_measured": "Not measured",
+  "tool_sequences_duration": "Длительность",
+  "tool_sequences_repeat_near_identical_title": "Same input with different JSON formatting",
+  "tool_sequences_flag_identical": "Same input repeated",
+  "tool_sequences_flag_near_identical": "Reformatted repeat",
+  "tool_sequences_flag_tool_switch": "Tool switched",
+  "tool_sequences_sequence_calls": [
+    {
+      "declarations": ["input count", "input countLabel", "local countPlural = count: plural"],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "{countLabel} call in sequences",
+        "countPlural=other": "{countLabel} calls in sequences"
+      }
+    }
+  ],
+  "tool_sequences_session_calls": [
+    {
+      "declarations": ["input count", "input countLabel", "local countPlural = count: plural"],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "{countLabel} tool call in session",
+        "countPlural=other": "{countLabel} tool calls in session"
+      }
+    }
+  ],
+  "tool_sequences_legend": "Outcome colors",
+  "tool_sequences_message": "Message {ordinal}",
+  "tool_sequences_messages_range": "Messages {first}–{last}",
+  "tool_sequences_jump_label": "Message {ordinal}: open the {tool} call in the transcript",
+  "tool_sequences_more_calls": [
+    {
+      "declarations": ["input count", "input countLabel", "local countPlural = count: plural"],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "+{countLabel} more",
+        "countPlural=other": "+{countLabel} more"
+      }
+    }
+  ],
+  "tool_sequences_calls_hidden_between": [
+    {
+      "declarations": [
+        "input count",
+        "input countLabel",
+        "input from",
+        "input to",
+        "local countPlural = count: plural"
+      ],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "{countLabel} more call between message {from} and message {to} isn't shown.",
+        "countPlural=other": "{countLabel} more calls between message {from} and message {to} aren't shown."
+      }
+    }
+  ],
+  "tool_sequences_calls_in_row": [
+    {
+      "declarations": ["input count", "input countLabel", "local countPlural = count: plural"],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "{countLabel} call in a row.",
+        "countPlural=other": "{countLabel} calls in a row."
+      }
+    }
+  ],
+  "tool_sequences_showing_sequences": [
+    {
+      "declarations": [
+        "input count",
+        "input countLabel",
+        "input shownLabel",
+        "local countPlural = count: plural"
+      ],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "Showing {shownLabel} of {countLabel} sequence. The rest come later in the session.",
+        "countPlural=other": "Showing {shownLabel} of {countLabel} sequences. The rest come later in the session."
+      }
+    }
+  ],
+  "tool_sequences_calls_not_shown": [
+    {
+      "declarations": ["input count", "input countLabel", "local countPlural = count: plural"],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "{countLabel} call in sequences isn't shown in this view.",
+        "countPlural=other": "{countLabel} calls in sequences aren't shown in this view."
+      }
+    }
+  ],
+  "tool_sequences_preview_shows": [
+    {
+      "declarations": [
+        "input count",
+        "input countLabel",
+        "input shownLabel",
+        "local countPlural = count: plural"
+      ],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "Preview shows {shownLabel} of {countLabel} byte.",
+        "countPlural=other": "Preview shows {shownLabel} of {countLabel} bytes."
+      }
+    }
+  ],
+  "tool_sequences_full_input_in_message": "Full input is in message {ordinal}.",
+  "tool_sequences_full_result_in_message": "Full result is in message {ordinal}.",
+  "tool_sequences_retry": "Try again",
+  "import_claude_connect": "Sign in",
+  "import_claude_sync_running": "Chrome Sync is already running.",
+  "import_claude_sync": "Синхронизация",
+  "import_claude_chrome_title": "Chrome",
+  "import_claude_desktop_title": "Account",
+  "import_claude_status_disconnected": "Not connected",
+  "import_claude_status_connected": "Connected",
+  "import_claude_status_signed_out": "Signed out",
+  "import_claude_status_update": "Update needed",
+  "import_claude_stop": "Stop",
+  "import_claude_terminal": "Terminal",
+  "import_claude_copy_command": "Copy command",
+  "import_claude_setup_load": "Then restart AgentsView, open {url}, turn on Developer mode, choose Load unpacked, and select the folder it prints.",
+  "import_claude_open_chrome": "Open Chrome with the AgentsView extension enabled. If you ran setup after starting AgentsView, restart AgentsView.",
+  "import_claude_tab_note": "Sync opens a background claude.ai tab if none is open. The tab stays open after Sync.",
+  "import_claude_signed_out": "Sign in to claude.ai in the Chrome profile with the AgentsView extension. Enable the extension in only one Chrome profile. Sync uses the first profile that connects.",
+  "import_claude_reload_extension": "Then reload the extension in {url}.",
+  "import_claude_update_app": "Restart AgentsView if you upgraded it.",
+  "import_claude_syncing": "Синхронизация…",
+  "import_claude_sync_background": "Sync keeps running if you close this dialog.",
+  "import_claude_sync_failed": "Ошибка синхронизации",
+  "import_claude_sign_in_failed": "Sign-in failed",
+  "import_claude_desktop_note": "Sign in takes an email code. For Google accounts, Sync from the web UI in Chrome.",
+  "usage_click_project": "Click to focus {label}; double-click to open its groups and sessions",
+  "usage_click_project_hint": "Select a project to filter the page, or open it to see its groups and sessions.",
+  "usage_click_to_focus": "Click to focus {label}",
+  "usage_click_to_focus_hint": "Click to focus; click again to clear",
+  "session_breadcrumb_tool_effectiveness": "Analyze tool effectiveness",
+  "insights_page_tool_effectiveness": "Tool Effectiveness",
+  "tool_effectiveness_model_assessment": "Model assessment",
+  "tool_effectiveness_no_omissions": "Nothing was left out of the model's input.",
+  "tool_effectiveness_assessment_helped": "Helped",
+  "tool_effectiveness_assessment_did_not_help": "Did not help",
+  "tool_effectiveness_assessment_unknown": "Unclear",
+  "tool_effectiveness_omission_budget_input": [
+    {
+      "declarations": [
+        "input count",
+        "input countLabel",
+        "input keptLabel",
+        "local countPlural = count: plural"
+      ],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "{countLabel} call input cut to at most {keptLabel} bytes",
+        "countPlural=other": "{countLabel} call inputs cut to at most {keptLabel} bytes each"
+      }
+    }
+  ],
+  "tool_effectiveness_omission_budget_result": [
+    {
+      "declarations": [
+        "input count",
+        "input countLabel",
+        "input keptLabel",
+        "local countPlural = count: plural"
+      ],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "{countLabel} call result cut to at most {keptLabel} bytes",
+        "countPlural=other": "{countLabel} call results cut to at most {keptLabel} bytes each"
+      }
+    }
+  ],
+  "tool_effectiveness_omission_unretained": [
+    {
+      "declarations": ["input count", "input countLabel", "local countPlural = count: plural"],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "{countLabel} call result not retained",
+        "countPlural=other": "{countLabel} call results not retained"
+      }
+    }
+  ],
+  "tool_effectiveness_omission_no_result": [
+    {
+      "declarations": ["input count", "input countLabel", "local countPlural = count: plural"],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "{countLabel} call with no recorded result",
+        "countPlural=other": "{countLabel} calls with no recorded result"
+      }
+    }
+  ],
+  "tool_effectiveness_omission_previews": [
+    {
+      "declarations": [
+        "input count",
+        "input countLabel",
+        "input charsLabel",
+        "local countPlural = count: plural"
+      ],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "{countLabel} message shown as a preview of {charsLabel} characters",
+        "countPlural=other": "{countLabel} messages shown as previews of {charsLabel} characters"
+      }
+    }
+  ],
+  "tool_effectiveness_details_unavailable": "Report details are unavailable, so the saved text is shown instead.",
+  "tool_effectiveness_session_changed": [
+    {
+      "declarations": [
+        "input count",
+        "input countLabel",
+        "input currentLabel",
+        "local countPlural = count: plural"
+      ],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "The session changed after this report: the model judged {countLabel} call and the session now has {currentLabel}.",
+        "countPlural=other": "The session changed after this report: the model judged {countLabel} calls and the session now has {currentLabel}."
+      }
+    }
+  ],
+  "tool_effectiveness_session_revised": "The session changed after this report was generated, so the facts below may differ from what the model judged.",
+  "tool_sequences_message_call": "Message {ordinal}, call {callNumber}",
+  "tool_sequences_jump_call_label": "Message {ordinal}, call {callNumber}: open the {tool} call in the transcript",
+  "tool_effectiveness_calls_judged": [
+    {
+      "declarations": ["input count", "input countLabel", "local countPlural = count: plural"],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "{countLabel} call judged",
+        "countPlural=other": "{countLabel} calls judged"
+      }
+    }
+  ],
+  "tool_effectiveness_conclusion_count": [
+    {
+      "declarations": ["input count", "input countLabel", "local countPlural = count: plural"],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "{countLabel} conclusion",
+        "countPlural=other": "{countLabel} conclusions"
+      }
+    }
+  ],
+  "tool_effectiveness_count_helped": [
+    {
+      "declarations": ["input count", "input countLabel", "local countPlural = count: plural"],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "{countLabel} helped",
+        "countPlural=other": "{countLabel} helped"
+      }
+    }
+  ],
+  "tool_effectiveness_count_did_not_help": [
+    {
+      "declarations": ["input count", "input countLabel", "local countPlural = count: plural"],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "{countLabel} did not help",
+        "countPlural=other": "{countLabel} did not help"
+      }
+    }
+  ],
+  "tool_effectiveness_count_unknown": [
+    {
+      "declarations": ["input count", "input countLabel", "local countPlural = count: plural"],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "{countLabel} unclear",
+        "countPlural=other": "{countLabel} unclear"
+      }
+    }
+  ],
+  "tool_effectiveness_calls_cited": [
+    {
+      "declarations": [
+        "input count",
+        "input countLabel",
+        "input citedLabel",
+        "local countPlural = count: plural"
+      ],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "{citedLabel} of {countLabel} call cited",
+        "countPlural=other": "{citedLabel} of {countLabel} calls cited"
+      }
+    }
+  ],
+  "tool_effectiveness_select_citation": "Select a citation to see the calls",
+  "tool_effectiveness_citation_count": [
+    {
+      "declarations": ["input count", "input countLabel", "local countPlural = count: plural"],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "{countLabel} citation",
+        "countPlural=other": "{countLabel} citations"
+      }
+    }
+  ],
+  "tool_effectiveness_message_label": "Message",
+  "tool_effectiveness_message_no_call": "Message text, no tool call",
+  "tool_effectiveness_left_out": "Left out of the model's input",
+  "tool_effectiveness_model_saw": [
+    {
+      "declarations": ["input count", "input countLabel", "local countPlural = count: plural"],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "model saw {countLabel} byte",
+        "countPlural=other": "model saw {countLabel} bytes"
+      }
+    }
+  ],
+  "tool_effectiveness_open_session": "Open session",
+  "tool_effectiveness_message_count": [
+    {
+      "declarations": ["input count", "input countLabel", "local countPlural = count: plural"],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "{countLabel} message",
+        "countPlural=other": "{countLabel} messages"
+      }
+    }
+  ],
+  "analytics_tool_empty_rate": "Доля пустых результатов",
+  "analytics_tool_repeat_rate": "Доля повторов",
+  "analytics_tool_recovery_rate": "Доля восстановлений",
+  "analytics_tool_name": "Инструмент",
+  "analytics_tool_coverage": "Проанализировано",
+  "analytics_tool_sessions": "Сессии",
+  "analytics_tool_share": "Доля",
+  "analytics_tool_unavailable": "Недоступно",
+  "analytics_tool_show_all": "Показать все инструменты",
+  "analytics_tool_show_less": "Показать меньше инструментов",
+  "analytics_tool_more_sessions": "Больше сессий",
+  "analytics_tool_empty_explanation": "Пустых результатов среди известных исходов: {count}/{total}.",
+  "analytics_tool_repeat_explanation": "Одинаковых или почти одинаковых повторов среди проанализированных вызовов: {count}/{total}.",
+  "analytics_tool_recovery_explanation": "Восстановленных последовательностей: {count}/{total}. Открытых: {open}. Неизвестных: {unknown}.",
+  "analytics_tool_coverage_explanation": "Проанализированные вызовы / все вызовы. Охват неполон для сессий, ожидающих пересчёта, и старых необработанных сессий.",
+  "analytics_tool_recovery_note": "Восстановление означает, что следующий вызов вернул содержимое. Доля восстановлений относится к инструменту, начавшему последовательность.",
+  "analytics_tool_evidence_count": [
+    {
+      "declarations": ["input count", "input countLabel", "local countPlural = count: plural"],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "{countLabel} сессия",
+        "countPlural=few": "{countLabel} сессии",
+        "countPlural=many": "{countLabel} сессий",
+        "countPlural=other": "{countLabel} сессии"
+      }
+    }
+  ],
+  "analytics_tool_history_note": "Показатели не учитывают вызовы из ещё пересчитываемых сессий и сессий, сохранённых без результатов инструментов.",
+  "analytics_tool_rate_button_label": "{tool} — {rate}: {value}",
+  "analytics_tool_latest_matching_call": "Последний подходящий вызов: {date}",
+  "analytics_tool_matching_calls": "Подходящих вызовов: {count}",
+  "usage_all_projects": "All projects",
+  "usage_clear_selection": "Снять выделение",
+  "usage_open_project": "Open",
+  "usage_loading": "Загрузка…",
+  "plan_usage_title": "Использование лимитов",
+  "plan_usage_trigger_weekly": "Plan usage: {percent}% weekly",
+  "plan_usage_as_of": "Plan usage, as of {time}",
+  "plan_usage_not_checked": "Plan usage: not checked yet",
+  "plan_usage_still_updating": "Plan usage: still updating, as of {time}",
+  "plan_usage_not_reported_yet": "Plan usage: not reported yet, as of {time}",
+  "plan_usage_partial": "Partial plan usage, as of {time}",
+  "plan_usage_not_reported": "Not reported by OpenAI",
+  "plan_usage_too_many_subagents": "Too many sub-agent chats for OpenAI's usage report",
+  "plan_usage_could_not_check": "AgentsView could not check plan usage",
+  "plan_usage_account_unavailable": "Usage isn't available for this account",
+  "plan_usage_counted_under": "Учтено в чате {title}",
+  "plan_usage_stale": "Since then: {reason} ({time}). These figures may be out of date.",
+  "plan_usage_left_out_later": "OpenAI's usage report left this chat out",
+  "plan_usage_weekly_share": "{percent}% of the weekly Codex limit",
+  "plan_usage_five_hour_share": "{percent}% of the five-hour Codex limit",
+  "plan_usage_credits": [
+    {
+      "declarations": ["input count", "input countLabel", "local countPlural = count: plural"],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "{countLabel} credit",
+        "countPlural=other": "{countLabel} credits"
+      }
+    }
+  ],
+  "plan_usage_credits_note": "Кредиты показаны в том виде, в котором их предоставляет отчёт OpenAI.",
+  "plan_usage_col_split": "Модель, усилие, скорость",
+  "plan_usage_col_weekly": "За неделю",
+  "plan_usage_col_five_hour": "За 5 часов",
+  "plan_usage_col_credits": "Кредиты",
+  "capture_tokens_live": "Tokens captured live, as of {time}",
+  "capture_turns_not_captured": [
+    {
+      "declarations": ["input count", "input countLabel", "local countPlural = count: plural"],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "{countLabel} turn not captured",
+        "countPlural=other": "{countLabel} turns not captured"
+      }
+    }
+  ],
+  "capture_turns_not_captured_covered": [
+    {
+      "declarations": [
+        "input count",
+        "input countLabel",
+        "input time",
+        "local countPlural = count: plural"
+      ],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "{countLabel} turn not captured; plan usage counts it if it ran before {time}",
+        "countPlural=other": "{countLabel} turns not captured; plan usage counts the ones that ran before {time}"
+      }
+    }
+  ],
+  "status_bar_codex_cloud_waiting": "Codex Cloud: waiting for first sync",
+  "status_bar_codex_cloud_importing_found": [
+    {
+      "declarations": ["input count", "input countLabel", "local countPlural = count: plural"],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "Codex Cloud: importing, found {countLabel} chat so far",
+        "countPlural=other": "Codex Cloud: importing, found {countLabel} chats so far"
+      }
+    }
+  ],
+  "status_bar_codex_cloud_importing_progress": "Codex Cloud: importing {imported} of {total} chats",
+  "status_bar_codex_cloud_up_to_date": "Codex Cloud: up to date as of {time}",
+  "status_bar_codex_cloud_retrying": [
+    {
+      "declarations": ["input count", "input countLabel", "local countPlural = count: plural"],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "Codex Cloud: {countLabel} chat could not be imported",
+        "countPlural=other": "Codex Cloud: {countLabel} chats could not be imported"
+      }
+    }
+  ],
+  "status_bar_codex_cloud_error": "Codex Cloud: error",
+  "status_bar_codex_cloud_off": "Codex Cloud: off",
+  "status_bar_codex_cloud_config_error": "Codex Cloud: settings error",
+  "status_bar_codex_cloud_live_attention": "Codex Cloud: live tokens need attention",
+  "status_bar_codex_cloud_oldest_failure": "Oldest failure: {time}",
+  "status_bar_codex_cloud_last_success": "Last successful sync: {time}",
+  "status_bar_codex_cloud_homes": "Codex homes: {homes}",
+  "appearance_message_colors": "Цвета сообщений",
+  "appearance_message_colors_description": "Назначьте каждому типу сообщений свой цвет. Безопасная для людей с нарушениями цветового зрения палитра использует различающиеся оттенки и штриховку, чтобы типы отличались не только цветом, но и формой.",
+  "appearance_message_colors_preset": "Набор цветов сообщений",
+  "appearance_message_colors_preset_default": "Цвета темы",
+  "appearance_message_colors_preset_colorblind": "Безопасная палитра",
+  "appearance_message_colors_preset_custom": "Произвольный",
+  "appearance_message_colors_patterns": "Различать типы сообщений штриховкой и цветом",
+  "appearance_message_colors_reset_all": "Сбросить настройки",
+  "appearance_message_colors_reset_role": "Сбросить",
+  "appearance_message_colors_reset_role_label": "Сбросить цвет для роли «{role}»",
+  "appearance_message_colors_role_label": "Цвет для роли «{role}»",
+  "appearance_message_colors_picker": "Открыть выбор цвета",
+  "appearance_message_colors_hex": "Шестнадцатеричный код цвета",
+  "appearance_message_colors_warning_text": "Текст может быть плохо различим: {modes} (контрастность {ratio}:1 при требуемой {required}:1).",
+  "appearance_message_colors_warning_marker": "Цветной маркер может быть плохо различим: {modes} (контрастность {ratio}:1 при требуемой {required}:1).",
+  "appearance_message_colors_mode_light": "светлая тема",
+  "appearance_message_colors_mode_dark": "тёмная тема",
+  "appearance_message_colors_mode_high_contrast_light": "светлая тема с высокой контрастностью",
+  "appearance_message_colors_mode_high_contrast_dark": "тёмная тема с высокой контрастностью",
+  "appearance_message_colors_swatch_blue": "Синий",
+  "appearance_message_colors_swatch_vermillion": "Киноварь",
+  "appearance_message_colors_swatch_bluish_green": "Сине-зелёный",
+  "appearance_message_colors_swatch_reddish_purple": "Красно-фиолетовый",
+  "appearance_message_colors_swatch_dark_yellow": "Тёмно-жёлтый",
+  "appearance_message_colors_swatch_gray": "Серый",
+  "appearance_message_colors_preview": "Предварительный просмотр",
+  "appearance_message_colors_preview_user": "Почему не проходит проверка даты?",
+  "appearance_message_colors_preview_assistant": "В тестовых данных ожидается UTC. Я исправил проверку.",
+  "nav_friction": "Журнал затруднений",
+  "friction_page_help_docs": "How the Friction Log works",
+  "friction_page_refresh": "Refresh Friction Log",
+  "friction_date_label": "Digest date",
+  "friction_date_previous": "Previous digest",
+  "friction_date_next": "Next digest",
+  "friction_date_no_match": "No matching dates",
+  "friction_build_now": "Build now",
+  "friction_build_title": "Build a digest for every complete day that does not have one yet",
+  "friction_build_done": [
+    {
+      "declarations": [
+        "input count",
+        "local countPlural = count: plural",
+        "local countNumber = count: number"
+      ],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "Built {countNumber} digest",
+        "countPlural=other": "Built {countNumber} digests"
+      }
+    }
+  ],
+  "friction_build_nothing": "Every complete day already has a digest.",
+  "friction_build_failed": "Build failed: {error}",
+  "friction_empty_title": "No friction digests yet",
+  "friction_empty_hint": "A digest is built automatically once each local day is complete, and the hourly job catches up on any day that was missed. Use Build now to build missing days right away.",
+  "friction_empty_hint_remote": "A digest is built automatically once each local day is complete, and the hourly job catches up on any day that was missed. To build missing days right away, open this page on the machine that runs AgentsView, or turn on require_auth on the server.",
+  "friction_load_error": "Could not load the Friction Log",
+  "friction_retry": "Повторить",
+  "friction_issue_open": "Open {issue} in Kata",
+  "friction_issue_file": "File to Kata",
+  "friction_issue_file_title": "File this pattern to Kata, or link the issue Kata already holds for it",
+  "friction_issue_link": "Link issue",
+  "friction_issue_link_label": "Kata issue",
+  "friction_issue_link_placeholder": "agentsview#f001",
+  "friction_issue_link_submit": "Link",
+  "friction_issue_cancel": "Cancel",
+  "friction_issue_unlink": "Unlink",
+  "friction_issue_unlink_title": "Remove the link; the Kata issue stays as it is",
+  "friction_filing_retry": "Filing failed, will retry",
+  "friction_filing_needs_person": "Filing stopped",
+  "friction_filing_paused": "Auto-filing paused",
+  "friction_filing_paused_title": "Automatic filing skips this pattern because its link was removed. File or link it to resume.",
+  "friction_digest_heading": "Friction Log — {date}",
+  "friction_digest_built": "Built {when} ({timezone})",
+  "friction_p0_failed": [
+    {
+      "declarations": [
+        "input count",
+        "local countPlural = count: plural",
+        "local countNumber = count: number"
+      ],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "failed in {countNumber} session",
+        "countPlural=other": "failed in {countNumber} sessions"
+      }
+    }
+  ],
+  "friction_clean_title": "No friction found",
+  "friction_clean_hint": [
+    {
+      "declarations": [
+        "input count",
+        "local countPlural = count: plural",
+        "local countNumber = count: number"
+      ],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "Nothing was flagged in the {countNumber} session scanned.",
+        "countPlural=other": "Nothing was flagged in the {countNumber} sessions scanned."
+      }
+    }
+  ],
+  "friction_clean_no_sessions": "No sessions were active on this day.",
+  "friction_deferral_said": "Put off work: “{phrase}”",
+  "friction_pattern_retry_loop": "Retry loop",
+  "friction_pattern_runaway_loop": "Runaway tool loop",
+  "friction_pattern_edit_churn": "Edit churn",
+  "friction_pattern_mid_task_compaction": "Compaction mid-task",
+  "friction_pattern_context_pressure": "Context pressure",
+  "friction_pattern_iteration_runaway": "Long run without user input",
+  "friction_digest_missing": "No digest exists for {date}.",
+  "friction_scanned": [
+    {
+      "declarations": [
+        "input count",
+        "local countPlural = count: plural",
+        "local countNumber = count: number"
+      ],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "{countNumber} session scanned",
+        "countPlural=other": "{countNumber} sessions scanned"
+      }
+    }
+  ],
+  "friction_headline_title": "Needs attention",
+  "friction_p0_title": "Tools failing across sessions",
+  "friction_patterns_new": "New patterns",
+  "friction_patterns_recurring": "Recurring patterns",
+  "friction_pattern_occurrences": [
+    {
+      "declarations": [
+        "input count",
+        "local countPlural = count: plural",
+        "local countNumber = count: number"
+      ],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "{countNumber} occurrence",
+        "countPlural=other": "{countNumber} occurrences"
+      }
+    }
+  ],
+  "friction_pattern_sessions": [
+    {
+      "declarations": [
+        "input count",
+        "local countPlural = count: plural",
+        "local countNumber = count: number"
+      ],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "{countNumber} session",
+        "countPlural=other": "{countNumber} sessions"
+      }
+    }
+  ],
+  "friction_pattern_first_seen": "First seen {date}",
+  "friction_section_corrections": "Corrections",
+  "friction_section_errors": "Errors",
+  "friction_section_workarounds": "Workarounds",
+  "friction_section_deferrals": "Deferrals",
+  "friction_section_patterns": "Patterns",
+  "friction_section_frustration": "Frustration",
+  "friction_section_interruptions": "Interruptions",
+  "friction_section_diagnostics": "Diagnostics",
+  "friction_diagnostic_count": "x{count}",
+  "friction_interruption_count": [
+    {
+      "declarations": [
+        "input count",
+        "local countPlural = count: plural",
+        "local countNumber = count: number"
+      ],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "{countNumber} interruption",
+        "countPlural=other": "{countNumber} interruptions"
+      }
+    }
+  ],
+  "friction_kind_correction": "Correction",
+  "friction_kind_error": "Error",
+  "friction_kind_workaround": "Workaround",
+  "friction_kind_deferral": "Deferral",
+  "friction_kind_pattern": "Pattern",
+  "friction_kind_frustration": "Frustration",
+  "friction_kind_interruption": "Interruption",
+  "friction_kind_diagnostic": "Diagnostic",
+  "friction_disabled_title": "Friction Log is off on this server",
+  "friction_disabled_hint": "This server does not build digests. Set [friction] enabled = true in config.toml and restart the daemon. A read-only archive cannot build digests.",
+  "friction_markdown_title": "Markdown",
+  "friction_markdown_show": "Show Markdown",
+  "friction_markdown_copy": "Copy Markdown",
+  "friction_markdown_copied": "Copied Markdown",
+  "friction_markdown_download": "Download Markdown",
+  "friction_markdown_loading": "Loading Markdown…",
+  "friction_markdown_error": "Could not load the Markdown digest.",
+  "friction_open_session": "Open {session} at message {ordinal}",
+  "friction_open_session_start": "Open {session}",
+  "friction_quality_card_title": "Friction Log",
+  "friction_quality_card_body": "Daily digests of corrections, tool errors, workarounds, deferrals and recurring patterns found in your sessions.",
+  "friction_quality_card_open": "Open the Friction Log",
+  "friction_session_title": "Friction findings",
+  "friction_session_loading": "Loading friction findings…",
+  "friction_session_error": "Friction findings are unavailable.",
+  "friction_session_empty": "No friction findings in this session.",
+  "friction_session_jump": "Message {ordinal}",
+  "friction_session_jump_title": "Jump to message {ordinal}",
+  "docbank_subagent_open_session": "File matches appear when opened as a session.",
+  "docbank_checking": "Checking Docbank…",
+  "docbank_current": "Current",
+  "docbank_prior": "Prior version",
+  "docbank_trash": "Корзина",
+  "docbank_not_found": "Not in Docbank",
+  "docbank_read_unavailable": "Session files unavailable",
+  "docbank_unavailable": "Docbank unavailable",
+  "docbank_limit_exceeded": "Docbank lookup limit reached",
+  "docbank_bytes_not_kept": "Image bytes not kept",
+  "docbank_file": "File {n} · {mediaType} · {size}",
+  "docbank_file_without_size": "File {n} · {mediaType}",
+  "docbank_more": "+{count} more in Docbank",
+  "meaning_name": "Search by meaning",
+  "meaning_off": "Off",
+  "meaning_on": "On",
+  "meaning_uses_ollama": "Uses Ollama when turned on",
+  "meaning_ollama": "On · Ollama",
+  "meaning_turning_on": "Turning on",
+  "meaning_turn_on": "Turn on",
+  "meaning_download": "Downloads {size} once, shared by all Kenn apps",
+  "meaning_downloaded": "Already on this computer",
+  "meaning_configured": "Uses your configured server",
+  "meaning_downloading": "Downloading {done} of {total}",
+  "meaning_indexing": "Indexing {done} of {total} {items}",
+  "meaning_time_left": "{time} left",
+  "meaning_meanwhile": "Keyword search works meanwhile",
+  "meaning_under_minute": "under a minute",
+  "meaning_about_time": "about {time}",
+  "meaning_progress": "Search by meaning setup",
+  "meaning_hint": "Search by meaning is off",
+  "meaning_chunks": [
+    {
+      "declarations": ["input count", "local countPlural = count: plural"],
+      "selectors": ["countPlural"],
+      "match": {
+        "countPlural=one": "text section",
+        "countPlural=other": "text sections"
+      }
+    }
+  ],
+  "empty_archive_title": "Сессий пока нет",
+  "empty_archive_desc": "AgentsView читает сессии из этих папок. Они появятся здесь, когда агент запишет данные в одну из них.",
+  "empty_archive_choose_folders": "Выбрать папки",
+  "settings_language_russian": "Русский"
+}
