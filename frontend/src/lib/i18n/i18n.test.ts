@@ -19,6 +19,7 @@ import fr from "../../../messages/fr.json";
 import ja from "../../../messages/ja.json";
 import az from "../../../messages/az.json";
 import es from "../../../messages/es.json";
+import ru from "../../../messages/ru.json";
 
 describe("i18n locale selection", () => {
   beforeEach(() => {
@@ -50,6 +51,9 @@ describe("i18n locale selection", () => {
     expect(normalizeLocale("es-MX")).toBe("es");
     expect(normalizeLocale("es-419")).toBe("es");
     expect(normalizeLocale("ES-AR")).toBe("es");
+    expect(normalizeLocale("ru")).toBe("ru");
+    expect(normalizeLocale("ru-RU")).toBe("ru");
+    expect(normalizeLocale("RU-by")).toBe("ru");
   });
 
   it("falls back to English for unsupported locales", () => {
@@ -106,6 +110,7 @@ describe("i18n locale selection", () => {
     expect(Object.keys(ja).sort()).toEqual(Object.keys(en).sort());
     expect(Object.keys(az).sort()).toEqual(Object.keys(en).sort());
     expect(Object.keys(es).sort()).toEqual(Object.keys(en).sort());
+    expect(Object.keys(ru).sort()).toEqual(Object.keys(en).sort());
   });
 
   it("points auth recovery at pre-auth token sources", () => {

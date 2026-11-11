@@ -4,7 +4,7 @@
   import { scaleBand } from "d3-scale";
   import type { DbSignalsTrendBucket as SignalsTrendBucket } from "../../api/generated/index.js";
   import { getGradeStyle, scoreToGrade } from "../../utils/grade.js";
-  import { m } from "../../i18n/index.js";
+  import { getLocale, m } from "../../i18n/index.js";
   import LargeChartFrame from "../shared/LargeChartFrame.svelte";
 
   interface Props {
@@ -41,7 +41,7 @@
       ? Math.round(score)
       : m.analytics_health_trend_no_scored_sessions()} (${m.analytics_session_shape_session_count({
         count: bucket.session_count,
-        countLabel: bucket.session_count.toLocaleString(),
+        countLabel: bucket.session_count.toLocaleString(getLocale()),
       })})`;
   }
 
@@ -110,7 +110,7 @@
                   ? Math.round(bucket.avg_health_score)
                   : m.analytics_health_trend_no_scored_sessions()}
               </td>
-              <td>{bucket.session_count.toLocaleString()}</td>
+              <td>{bucket.session_count.toLocaleString(getLocale())}</td>
             </tr>
           {/each}
         </tbody>

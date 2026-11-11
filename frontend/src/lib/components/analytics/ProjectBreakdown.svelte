@@ -2,7 +2,7 @@
   import { analytics } from "../../stores/analytics.svelte.js";
   import PanelStatus from "./PanelStatus.svelte";
   import type { DbProjectAnalytics as ProjectAnalytics } from "../../api/generated/index.js";
-  import { m } from "../../i18n/index.js";
+  import { getLocale, m } from "../../i18n/index.js";
 
   const MAX_PROJECTS = 15;
   const BAR_HEIGHT = 20;
@@ -75,11 +75,11 @@
     const parts: string[] = [
       m.analytics_project_messages({
         count: project.messages,
-        countLabel: project.messages.toLocaleString(),
+        countLabel: project.messages.toLocaleString(getLocale()),
       }),
       m.analytics_project_sessions({
         count: project.sessions,
-        countLabel: project.sessions.toLocaleString(),
+        countLabel: project.sessions.toLocaleString(getLocale()),
       }),
     ];
     if (agents) parts.push(agents);
@@ -101,7 +101,7 @@
     {#if rows.length > 0}
       <span class="count">
         {m.analytics_total_count({
-          countLabel: (analytics.projects?.projects.length ?? 0).toLocaleString(),
+          countLabel: (analytics.projects?.projects.length ?? 0).toLocaleString(getLocale()),
         })}
       </span>
     {/if}
@@ -137,7 +137,7 @@
             ></div>
           </div>
           <span class="bar-value">
-            {project.messages.toLocaleString()}
+            {project.messages.toLocaleString(getLocale())}
           </span>
         </div>
       {/each}

@@ -2,7 +2,7 @@
   import { analytics } from "../../stores/analytics.svelte.js";
   import PanelStatus from "./PanelStatus.svelte";
   import { router } from "../../stores/router.svelte.js";
-  import { m } from "../../i18n/index.js";
+  import { getLocale, m } from "../../i18n/index.js";
 
   interface AgentRow {
     name: string;
@@ -130,10 +130,10 @@
         >
           <span class="col-agent">{agent.name}</span>
           <span class="col-num">
-            {agent.sessions.toLocaleString()}
+            {agent.sessions.toLocaleString(getLocale())}
           </span>
           <span class="col-num">
-            {agent.messages.toLocaleString()}
+            {agent.messages.toLocaleString(getLocale())}
           </span>
           <span class="col-num">
             {formatDuration(agent.turnCycleP50)}
@@ -145,7 +145,7 @@
             {formatRate(agent.toolsPerMin)}
           </span>
           <span class="col-num">
-            {agent.totalToolCalls.toLocaleString()}
+            {agent.totalToolCalls.toLocaleString(getLocale())}
           </span>
           <span class="col-cats">
             {agent.topCategories.join(", ") || "-"}

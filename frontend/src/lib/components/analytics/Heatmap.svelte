@@ -10,7 +10,7 @@
   const MAX_CELL_STEP = MAX_CELL_SIZE + MAX_CELL_GAP;
   const LABEL_WIDTH = 36;
   const HEADER_HEIGHT = 16;
-  const DAY_LABELS = ["", "Mon", "", "Wed", "", "Fri", ""];
+  const DAY_LABELS = ["", m.analytics_weekday_mon(), "", m.analytics_weekday_wed(), "", m.analytics_weekday_fri(), ""];
 
   const LEVEL_COLORS_LIGHT = [
     "var(--bg-inset)",

@@ -11,7 +11,7 @@
     XIcon,
   } from "../../icons.js";
   import { agentColor, agentLabel } from "../../utils/agents.js";
-  import { formatDayRange, m } from "../../i18n/index.js";
+  import { formatDateTime, formatDayRange, m } from "../../i18n/index.js";
 
   const selectedAgents = $derived(
     analytics.agent
@@ -45,13 +45,14 @@
   }
 
   const DAY_LABELS = [
-    "Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun",
+    m.analytics_weekday_mon(), m.analytics_weekday_tue(), m.analytics_weekday_wed(),
+    m.analytics_weekday_thu(), m.analytics_weekday_fri(), m.analytics_weekday_sat(), m.analytics_weekday_sun(),
   ];
 
   const dateLabel = $derived.by(() => {
     if (!analytics.selectedDate) return "";
     const d = new Date(analytics.selectedDate + "T00:00:00");
-    return d.toLocaleDateString("en", {
+    return formatDateTime(d, {
       month: "short",
       day: "numeric",
       year: "numeric",

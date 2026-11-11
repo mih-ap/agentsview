@@ -2,10 +2,10 @@
   import { Card } from "@kenn-io/kit-ui";
   import { analytics } from "../../stores/analytics.svelte.js";
   import PanelStatus from "./PanelStatus.svelte";
-  import { formatDayRange, m } from "../../i18n/index.js";
+  import { formatDayRange, getLocale, m } from "../../i18n/index.js";
 
   function formatNum(n: number): string {
-    return n.toLocaleString();
+    return n.toLocaleString(getLocale());
   }
 
   function pct(n: number): string {

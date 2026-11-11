@@ -1,7 +1,7 @@
 <script lang="ts">
   import { Card } from "@kenn-io/kit-ui";
   import type { DbStatsOutcomeStats } from "../../api/generated/index.js";
-  import { m } from "../../i18n/index.js";
+  import { getLocale, m } from "../../i18n/index.js";
   import PanelStatus from "./PanelStatus.svelte";
 
   interface Props {
@@ -35,7 +35,7 @@
   }
 
   function formatNum(value: number): string {
-    return value.toLocaleString();
+    return value.toLocaleString(getLocale());
   }
 
   const metrics = $derived.by((): Metric[] => {
